@@ -1,0 +1,28 @@
+
+
+.Header{
+  display: flex;
+  flex-direction: row;
+  column-count: 3;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  margin-top: 50px;
+  background-color: black no-repeat scroll 50% 0%;
+  vertical-align: top;
+
+
+}
+img{
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  align-content: center;
+  padding: 4px;
+}
+div {
+  width: 100px;
+  height: auto;
+  margin: 9px;
+  align-content: center;
+}

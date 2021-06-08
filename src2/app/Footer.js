@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import './Footer.css';
 
 class Footer extends Component {
@@ -6,7 +6,7 @@ class Footer extends Component {
   render() { 
     return (
       <footer className="Footer">
-        &copy; 2021 You
+        {/* &copy; 2021 You */}
       </footer>
     );
   }

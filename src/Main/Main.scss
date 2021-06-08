@@ -1,0 +1,151 @@
+.App {
+  max-width: 100vw;
+
+  .Landing {
+    text-align: center;
+  }
+
+    .landing-group {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: teal;
+
+        .arrow {
+          position:absolute;
+          bottom: 0;
+          cursor: pointer;
+          animation-name: bounce;
+          animation-duration: 0.7s;
+          animation-direction: alternate;
+          animation-timing-function: cubic-bezier(
+            0.1, -0.6, 0.1);
+          animation-iteration-count: infinite;
+          -webkit-animation-name: bounce;
+          -webkit-animation-duration: 0.7s;
+          -webkit-animation-direction: alternate;
+          -webkit-animation-timing-function: cubic-bezier(
+            0.1, -0.6, 0.1);
+          -webkit-animation-iteration-count: infinite;
+        }
+
+        @keyframes bounce {
+          from {
+              -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+          }
+          to {
+              -webkit-transform: translate3d(0, -25px, 0);
+              transform: translate3d(0, -25px, 0);
+          }
+        }
+
+        .hidden {
+          visibility: hidden;
+        }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
+    .landing-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      
+      .landing-logo {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .name {
+        font-family: 'Dancing Script', cursive;
+        font-size: 4rem;
+        margin: 14px 0px;
+      }
+
+      .title {
+        margin: 0;
+      }
+    }
+
+    .footer {
+      background-color: black;
+      color: teal;
+      padding: 10px 10px 20px 10px;
+      text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+  .App {
+    width: 100vw;
+    overflow-x: hidden;
+
+    .Landing {
+          max-width: 100%;
+  
+      .arrow {
+        margin-bottom: 8vh;
+      }
+    }
+  
+    .footer {
+      font-size: 1.2rem;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .App {
+    width: 100vw;
+    overflow-x: hidden;
+
+    .Landing {
+      .arrow {
+        margin-bottom: 10px;
+      }
+  
+      .landing-logo {
+        width: 3rem;
+        height: 3rem;
+    
+      }
+  
+      .name {
+        font-size: 3rem;
+        margin: 14px 0px;
+      }
+  
+      .title {
+        font-size: 14px;
+      }
+    }
+  
+    .footer {
+      font-size: 0.9rem;
+    }
+  }
+
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 568px) 
+and (max-device-width: 823px) {
+  .Landing {
+    .arrow {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer {
+    margin: 0;
+    padding: 0 0 3px 0;
+    font-size: 14px;
+  }
+}
