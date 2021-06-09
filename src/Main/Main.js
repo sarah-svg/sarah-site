@@ -33,15 +33,12 @@ function Main() {
   return (
     <div className="App">
       <Header />
-      
       <div className="Landing" name="home">
         <div className="landing-group">
           <div className="landing-header">
-            {/* <img src="./logo.png" alt="letter b logo" className="landing-logo" /> */}
             <p className="name">Sarah Skillen</p>
           </div>
           <p className="title">Full Stack Software Engineer</p>
-
           <div className="arrow">
             <Link activeClass="active" to="about" smooth={true} >
               <img src="./arrow.png" alt="down arrow" />
@@ -49,12 +46,10 @@ function Main() {
           </div>
         </div>
       </div>
-
       <About />
       <Mission />
       <Projects />
       <Contact />
-      
       <div className="footer">
         <p>Handcrafted by Sarah Skillen &#169; 2021 </p>
       </div>

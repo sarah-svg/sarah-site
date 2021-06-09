@@ -21,7 +21,6 @@ export default function Contact() {
                         /in/sarahskillen
             </a>
           </p>
-
           <p>
             <a href="https://github.com/sarah-svg">
               <img src="./git.png" alt="icon link to Sarah's github" />

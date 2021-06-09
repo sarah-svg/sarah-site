@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-// import ReactPlayer from 'react-player';
 import { projectsData } from './data.js';
 import './Projects.scss';
-console.log(projectsData[2]);
+
 export default function Projects() {
   const [index, setIndex] = useState(0);
 
