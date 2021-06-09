@@ -11,26 +11,26 @@ export default function Contact() {
 
           <p>
             <a href="mailto: kjskillen@gmail.com">
-              <img src="./email-dark.png" alt="icon link to Sarah's email" />
+              <img src="./email.png" alt="icon link to Sarah's email" />
                         kjskillen@gmail.com
             </a>
           </p>
           <p>
             <a href="https://www.linkedin.com/in/sarah-skillen-7339b61b8/">
-              <img src="./linkedin-dark.png" alt="icon link to sarah's linkedin" />
+              <img src="./linkdin.png" alt="icon link to sarah's linkedin" />
                         /in/sarahskillen
             </a>
           </p>
 
           <p>
             <a href="https://github.com/sarah-svg">
-              <img src="./github-dark.png" alt="icon link to Sarah's github" />
+              <img src="./git.png" alt="icon link to Sarah's github" />
                         /sarah-svg
             </a>
           </p>
           <p className="tooltip">
             <a href="./resume2.pdf">
-              <img src="./cv-light.png" alt="icon link to Sarah's resume" />
+              <img src="./resume2.png" alt="icon link to Sarah's resume" />
                         Resume
             </a>
             <span className="tooltip-text"></span>

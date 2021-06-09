@@ -5,10 +5,12 @@
     justify-content: center;
 }
 
+
 .Contact {
     min-height: 30vh;
     margin: 0;
     padding: 25vh;
+    
 
     background-color:teal;
     color: teal;
@@ -19,6 +21,8 @@
 
         img {
             margin-right: 1rem;
+            width: 45px;
+            padding: auto;
         }
 
         a {
