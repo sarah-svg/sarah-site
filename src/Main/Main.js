@@ -37,7 +37,7 @@ function Main() {
       <div className="Landing" name="home">
         <div className="landing-group">
           <div className="landing-header">
-            <img src="./logo.png" alt="letter b logo" className="landing-logo" />
+            {/* <img src="./logo.png" alt="letter b logo" className="landing-logo" /> */}
             <p className="name">Sarah Skillen</p>
           </div>
           <p className="title">Full Stack Software Engineer</p>
