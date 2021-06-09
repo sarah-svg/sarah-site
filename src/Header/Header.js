@@ -7,7 +7,7 @@ export default function Header() {
     <div className='Header' id='Header'>
       <div className='logo'>
         <a href='/'>
-          <img src='./logo.png' alt='logo with b' />
+          <img src='./logo.png' alt='logo with s' />
         </a>
       </div>
 
@@ -27,7 +27,7 @@ export default function Header() {
         <Link activeClass="active" 
           to="contact" 
           smooth={true}
-          className="nav-link">Connect</Link>
+          className="nav-link">Contact</Link>
       </div>
     </div>
   );

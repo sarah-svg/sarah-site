@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 import { projectsData } from './data.js';
 import './Projects.scss';
-
+console.log(projectsData[2]);
 export default function Projects() {
   const [index, setIndex] = useState(0);
 
@@ -18,14 +18,18 @@ export default function Projects() {
 
         <div className="slideshow-container">
           <button className="prev" onClick={() => changeSlide(-1)}>&#10094;</button>
-          <ReactPlayer 
+          <figure>
+            <img className="projectImg" src={projectsData[index].demo} alt={projectsData[index].name} />
+            <figcaption>{projectsData[index].name}</figcaption>
+          </figure>
+          {/* <ReactPlayer 
             url={projectsData[index].demo} 
             controls="true"
             width='100%'
             height='100%' 
                         // playing="true"
                         // muted="true"
-          />
+          /> */}
           <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
         </div>
 
