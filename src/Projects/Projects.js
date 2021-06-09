@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <div className="Projects-Body" name="projects">
       <div className="Projects">
-        <h2>Selected Projects</h2>
+        <h2>Projects</h2>
 
         <div className="slideshow-container">
           <button className="prev" onClick={() => changeSlide(-1)}>&#10094;</button>
@@ -22,17 +22,8 @@ export default function Projects() {
             <img className="projectImg" src={projectsData[index].demo} alt={projectsData[index].name} />
             <figcaption>{projectsData[index].name}</figcaption>
           </figure>
-          {/* <ReactPlayer 
-            url={projectsData[index].demo} 
-            controls="true"
-            width='100%'
-            height='100%' 
-                        // playing="true"
-                        // muted="true"
-          /> */}
           <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
         </div>
-
         <div className="desc">
           <p>{projectsData[index].desc}</p>
           <p className="links">
