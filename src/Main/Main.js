@@ -36,7 +36,9 @@ function Main() {
       <div className="Landing" name="home">
         <div className="landing-group">
           <div className="landing-header">
-            <p className="name">Sarah Skillen</p>
+            <div className="typewriter">
+              <h1 className="name">Sarah Skillen</h1>
+            </div>
           </div>
           <p className="title">Full Stack Software Engineer</p>
           <div className="arrow">

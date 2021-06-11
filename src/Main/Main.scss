@@ -61,22 +61,51 @@
         width: 4rem;
         height: 4rem;
       }
+      .typewriter h1 {
+        color: teal;
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid teal; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(30, end),
+          blink-caret .5s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+      }
 
-      .name {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 4rem;
-        margin: 14px 0px;
+      // .name {
+      //   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      //   font-size: 4rem;
+      //   margin: 14px 0px;
+      //   animation-name: rotate;
+      //   animation-duration: 0.7s;
         
         
-      }
-      @keyframes rotate {
-        0% {
-          transform: rotate(0);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
+      // }
+      // @keyframes rotate {
+      //   0% {
+      //     transform: scaleX(2);
+      //   }
+      //   50%{
+      //     transform: scaleY(.5);
+      //   }
+      //   100% {
+      //     transform: scaleX(2);
+      //   }
+      // }
 
       .title {
         margin: 0;
