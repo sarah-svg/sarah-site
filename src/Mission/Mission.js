@@ -3,15 +3,18 @@ import './Mission.scss';
 
 export default function Mission() {
   return (
-    <div className="Mission">
-      <div className="inner">
-        <p>Mission</p>
-        <p className="p">
+    <div
+      className="sparkle">
+      <div className="Mission">
+        <div className="inner">
+          <p>Mission</p>
+          <p className="p">
                   Mission to bring computers to everyone!
-        </p>
-        <p>
+          </p>
+          <p>
               Learning from mistakes to create continous improvement and growth!
-        </p>
+          </p>
+        </div>
       </div>
     </div>
   );
