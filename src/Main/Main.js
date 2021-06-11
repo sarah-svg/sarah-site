@@ -51,7 +51,7 @@ function Main() {
       <Mission />
       <Contact />
       <div className="footer">
-        <p>Handcrafted by Sarah Skillen &#169; 2021 </p>
+        <p> Created by Sarah Skillen &#169; 2021 </p>
       </div>
     </div>
   );
