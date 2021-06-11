@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="inner">
         <div className="content">
 
-          <p>Let's connect</p>
+          <p>Reach me at:</p>
 
           <p>
             <a href="mailto: kjskillen@gmail.com">
