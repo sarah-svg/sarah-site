@@ -46,9 +46,9 @@ function Main() {
           </div>
         </div>
       </div>
-      <About />
-      <Mission />
+      <About />   
       <Projects />
+      <Mission />
       <Contact />
       <div className="footer">
         <p>Handcrafted by Sarah Skillen &#169; 2021 </p>
