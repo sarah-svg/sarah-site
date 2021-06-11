@@ -19,7 +19,7 @@ export default function Header() {
         <Link activeClass="active" 
           to="about" 
           smooth={true}
-          className="nav-link">About</Link>
+          className="nav-link">Me</Link>
         <Link activeClass="active" 
           to="projects" 
           smooth={true}
@@ -27,7 +27,7 @@ export default function Header() {
         <Link activeClass="active" 
           to="contact" 
           smooth={true}
-          className="nav-link">Contact</Link>
+          className="nav-link">Reach me at</Link>
       </div>
     </div>
   );
