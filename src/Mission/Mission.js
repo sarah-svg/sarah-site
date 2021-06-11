@@ -10,7 +10,7 @@ export default function Mission() {
                   Mission to bring computers to everyone!
         </p>
         <p>
-                    I use mistakes as opportunities, practice and encourage inclusivity, and maintain a mindset of continous improvement and growth.
+              Learning from mistakes to create continous improvement!
         </p>
       </div>
     </div>
