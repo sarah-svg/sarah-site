@@ -21,11 +21,11 @@
 
 @keyframes glow {
     from {
-        box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 30px teal, 0 0 40px teal, 0 0 50px teal, 0 0 40px teal, 0 0 70px teal;
+        box-shadow: 0 0 10px teal, 0 0 10px teal, 0 0 30px teal, 0 0 40px teal, 0 0 50px teal, 0 0 40px teal, 0 0 70px teal;
     }
 
     to {
-        box-shadow: 0 0 10px #fff, 0 0 30px aquamarine, 0 0 40px aquamarine, 0 0 50px aquamarine, 0 0 40px aquamarine, 0 0 70px aquamarine, 0 0 80px aquamarine;
+        box-shadow: 0 0 10px #fff, 0 0 30px teal, 0 0 40px teal, 0 0 50px teal, 0 0 40px teal, 0 0 70px teal, 0 0 80px teal;
     }
 }
 

@@ -1,6 +1,6 @@
 .Header {
     background-color: black;
-    box-shadow: 0px 6px 10px rgba(199, 199, 199, 0.452);
+
     padding: 10px 10px;
     display: flex;
     flex-direction: row;
@@ -9,6 +9,13 @@
     top: 0;
     width: 100vw;
     z-index: 1;
+    animation: glow 1s ease-in-out infinite alternate;
+    background-color: #000;
+        box-shadow: 0 0 40px 20px teal, 0 0 10px 25px #0ff;
+        // transition: box-shadow 4s ease-out;
+        // animation: spin 16s linear infinite;
+      
+    
 
     .logo {
         img {
