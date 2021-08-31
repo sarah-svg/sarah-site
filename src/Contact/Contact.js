@@ -28,10 +28,10 @@ export default function Contact() {
             </a>
           </p>
           <p className="tooltip">
-            <a href="./resume2.pdf">
+            {/* <a href="./resume2.pdf">
               <img src="./resume2.png" alt="icon link to Sarah's resume" />
                         Resume
-            </a>
+            </a> */}
             <span className="tooltip-text"></span>
           </p>
         </div>

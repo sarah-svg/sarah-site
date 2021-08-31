@@ -29,6 +29,11 @@ export default function Header() {
           to="contact" 
           smooth={true}
           className="nav-link">Reach me at</Link>
+        <p>  
+          <a href="./resume2.pdf">Resume
+          </a>
+        </p>
+   
       </div>
     </div>
   );
