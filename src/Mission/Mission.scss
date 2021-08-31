@@ -7,15 +7,18 @@
     -moz-box-shadow: inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow: inset 0 0 10px #000000;
+  
+
 }
 
-.inner{
+.inner {
     font-size: 80px;
     color: teal;
     text-align: center;
     -webkit-animation: glow .7s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
+
 
 }
 
@@ -39,6 +42,7 @@
 
     p {
         font-size: 1.3rem;
+      
     }
 
     .inner {

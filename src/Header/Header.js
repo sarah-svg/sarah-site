@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+
 import './Header.scss';
 
 export default function Header() {
@@ -28,6 +29,11 @@ export default function Header() {
           to="contact" 
           smooth={true}
           className="nav-link">Reach me at</Link>
+        <p>  
+          <a href="./resume2.pdf">Resume
+          </a>
+        </p>
+   
       </div>
     </div>
   );
