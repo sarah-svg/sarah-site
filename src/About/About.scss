@@ -1,115 +1,115 @@
-.About {
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+// .About {
+//     min-height: 60vh;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 0;
+//     padding: 0;
 
-    background-color: teal;
-    color: #fff;
+//     background-color: teal;
+//     color: #fff;
 
-    p {
-        font-size: 1.3rem;
-        padding: 0 20vw;
-        // text-indent: 50px;
-        text-align: center;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid white; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .1em; /* Adjust as needed */
-        animation: 
-          typing 3.5s steps(30, end),
-          blink-caret .5s step-end infinite;
-    }
+//     p {
+//         font-size: 1.3rem;
+//         padding: 0 20vw;
+//         // text-indent: 50px;
+//         text-align: center;
+//         overflow: hidden; /* Ensures the content is not revealed until the animation */
+//         border-right: .15em solid white; /* The typwriter cursor */
+//         white-space: nowrap; /* Keeps the content on a single line */
+//         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//         letter-spacing: .1em; /* Adjust as needed */
+//         animation: 
+//           typing 3.5s steps(30, end),
+//           blink-caret .5s step-end infinite;
+//     }
     
-    p:first-of-type {
-        font-size: 1.8rem;
-        text-indent: 0;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid white; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .1em; /* Adjust as needed */
-        animation: 
-          typing 3.5s steps(30, end),
-          blink-caret .5s step-end infinite;
-    }
-}
+//     p:first-of-type {
+//         font-size: 1.8rem;
+//         text-indent: 0;
+//         overflow: hidden; /* Ensures the content is not revealed until the animation */
+//         border-right: .15em solid white; /* The typwriter cursor */
+//         white-space: nowrap; /* Keeps the content on a single line */
+//         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//         letter-spacing: .1em; /* Adjust as needed */
+//         animation: 
+//           typing 3.5s steps(30, end),
+//           blink-caret .5s step-end infinite;
+//     }
+// }
 
-@media (max-width: 992px) {
+// @media (max-width: 992px) {
 
-    .About {
-        p {
-            padding: 0 12vw;
-            margin: 0 0 3vh 0;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid white; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .1em; /* Adjust as needed */
-            animation: 
-              typing 3.5s steps(30, end),
-              blink-caret .5s step-end infinite;
-        }
-    }
+//     .About {
+//         p {
+//             padding: 0 12vw;
+//             margin: 0 0 3vh 0;
+//             overflow: hidden; /* Ensures the content is not revealed until the animation */
+//             border-right: .15em solid white; /* The typwriter cursor */
+//             white-space: nowrap; /* Keeps the content on a single line */
+//             margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//             letter-spacing: .1em; /* Adjust as needed */
+//             animation: 
+//               typing 3.5s steps(30, end),
+//               blink-caret .5s step-end infinite;
+//         }
+//     }
 
-}
+// }
   
-@media (max-width: 600px) {
-    .About {
-        min-height: 75vh;
-        margin-top: 3vh;
+// @media (max-width: 600px) {
+//     .About {
+//         min-height: 75vh;
+//         margin-top: 3vh;
 
-        p {
-            font-size: 1.1rem;
-            margin: 0 0 2vh 0;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid white; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .1em; /* Adjust as needed */
-            animation: 
-              typing 3.5s steps(30, end),
-              blink-caret .5s step-end infinite;
-        }
+//         p {
+//             font-size: 1.1rem;
+//             margin: 0 0 2vh 0;
+//             overflow: hidden; /* Ensures the content is not revealed until the animation */
+//             border-right: .15em solid white; /* The typwriter cursor */
+//             white-space: nowrap; /* Keeps the content on a single line */
+//             margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//             letter-spacing: .1em; /* Adjust as needed */
+//             animation: 
+//               typing 3.5s steps(30, end),
+//               blink-caret .5s step-end infinite;
+//         }
         
-        p:first-of-type {
-            font-size: 1.3rem;
-            width: 85vw;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid white; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .1em; /* Adjust as needed */
-            animation: 
-              typing 3.5s steps(30, end),
-              blink-caret .5s step-end infinite;
-        }
-    }
-}
+//         p:first-of-type {
+//             font-size: 1.3rem;
+//             width: 85vw;
+//             overflow: hidden; /* Ensures the content is not revealed until the animation */
+//             border-right: .15em solid white; /* The typwriter cursor */
+//             white-space: nowrap; /* Keeps the content on a single line */
+//             margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//             letter-spacing: .1em; /* Adjust as needed */
+//             animation: 
+//               typing 3.5s steps(30, end),
+//               blink-caret .5s step-end infinite;
+//         }
+//     }
+// }
 
-@media screen and (orientation:landscape)
-and (min-device-width: 568px) 
-and (max-device-width: 823px) {
-  .About {
-    height: 100vh;
-    padding-top: 3rem;
+// @media screen and (orientation:landscape)
+// and (min-device-width: 568px) 
+// and (max-device-width: 823px) {
+//   .About {
+//     height: 100vh;
+//     padding-top: 3rem;
 
-    p {
-        font-size: 1.1rem;
-        margin: 0 0 5vh 0;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid white; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .1em; /* Adjust as needed */
-        animation: 
-          typing 3.5s steps(30, end),
-          blink-caret .5s step-end infinite;
+//     p {
+//         font-size: 1.1rem;
+//         margin: 0 0 5vh 0;
+//         overflow: hidden; /* Ensures the content is not revealed until the animation */
+//         border-right: .15em solid white; /* The typwriter cursor */
+//         white-space: nowrap; /* Keeps the content on a single line */
+//         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//         letter-spacing: .1em; /* Adjust as needed */
+//         animation: 
+//           typing 3.5s steps(30, end),
+//           blink-caret .5s step-end infinite;
 
-    }
-  }
-}
+//     }
+//   }
+// }

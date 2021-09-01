@@ -25,6 +25,6 @@ export const projectsData = [
     demo: '/project3.png',
     repo: 'https://github.com/sarah-svg/lab37_bonus',
     site: 'https://nifty-mayer-9448dd.netlify.app/',
-    desc: 'This project uses GitHub api to search users!'
+    desc: 'The application utlizes the GitHub api to access a users repos. With just the users name you are able to pull up the users profile with working links to the users page and their repos. All components are tested for max user experience.'
   },
 ];

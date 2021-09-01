@@ -3,12 +3,20 @@
 	flex-flow: row wrap;
 	justify-content: center;
 	margin: 10px 0;
+	//background-color: rgb(23, 42, 58);
+	
     // border: 1px dotted teal;
+}
+.C{
+	//background-color: rgb(23, 42, 58);
+	
 }
 
 .column {
     width: 20px;
 	flex: 1;
+	//background-color: rgb(23, 42, 58);
+	
 	// border: 1px dotted teal;
 	margin: 2px;
 	padding: 1px;
@@ -18,5 +26,9 @@
     img{
         width: 35px;
     }
+	
+}
+.P{
+	//background-color: rgb(23, 42, 58);
 	
 }

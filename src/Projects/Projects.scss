@@ -1,22 +1,51 @@
-.Projects-body{
-    height: 600px;
-    border: solid blue 10px;
-    display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 10px 0;
 
-    img{
-        width: 90px;
-    }
+// @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+// .page-container{
+//     margin-top: 2%;
+//     display: flex;
+//     width: 100%;
+//     height: 80%;
+//     // border: solid teal 10px;
+// }
 
-    .Projects{
-        width: 20px;
-	flex: 1;
-	// border: 1px dotted teal;
-	margin: 2px;
-	padding: 1px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; } 
-    }
-}
+
+
+// .Projects-body{
+    
+//     list-style-type: none;
+//     display: flex;
+// 	flex-flow: row wrap;
+// 	justify-content: space-around;
+// 	margin: 10px 0;
+//     background-color: whitesmoke;
+
+//     .Projects{
+//         width: fit-content;
+//         justify-content: space-between;
+// 	flex: 1;
+// 	// border: 1px dotted teal;
+// 	margin: 1px;
+// 	padding: 1px;
+// 	&:first-child { margin-left: 0; }
+// 	&:last-child { margin-right: 0; } 
+
+//     }
+//     .img{
+//         height: 25px;
+//         width: 25px;
+//         //border: rgb(205, 86, 50) 3px solid;
+//     }
+//     .img:hover{
+//         transform: scale(1.5);
+//         box-shadow: 0 0 10px red;
+//     }
+//     .desc{
+//         border: whitesmoke dotted 2px;
+//         width: 255px;
+//         height: 75px;
+//         overflow: scroll;
+//     }
+//     .name{
+//         font-family: 'Fjalla One', sans-serif;
+//     }
+// }

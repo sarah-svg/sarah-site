@@ -4,7 +4,7 @@ import './Contact.scss';
 export default function Contact() {
   return (
     <>
-      <div className="Contact" name="contact">
+      <div className="Contact C" name="contact">
         <div className="column">
           <a href="mailto: kjskillen@gmail.com" >
             <img src="./email.png" alt="icon link to Sarah's email" /></a>
@@ -18,7 +18,7 @@ export default function Contact() {
             <img src="./git.png" alt="icon link to Sarah's github" /></a>
         </div>   
       </div>   
-      <p> Created by Sarah Skillen &#169; 2021 </p> 
+      <p className='P'> Created by Sarah Skillen &#169; 2021 </p> 
     </>
   );
 }
