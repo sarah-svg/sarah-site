@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import About from '../About/About';
-import Contact from '../Contact/Contact';
+// import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Mission from '../Mission/Mission';
 import Projects from '../Projects/Projects';
-import Tech from '../tech/Tech';
+
 
 import './Main.scss';
 
@@ -55,10 +56,11 @@ function Main() {
       <About />   
       <Projects />
       <Mission />
-      <Contact />
-      <div className="footer"> <Tech/>
+      {/* <Contact /> */}
+      {/* <div className="footer"> <Tech/>
         <p> Created by Sarah Skillen &#169; 2021 </p>
-      </div>
+      </div> */}
+      <Footer/>
     </div>
   );
 }
