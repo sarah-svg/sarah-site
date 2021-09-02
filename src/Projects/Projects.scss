@@ -12,6 +12,8 @@
     background-color: transparent;
     // opacity: 0.45;
     filter: brightness(10px);
+    min-width: -webkit-fill-available;
+    max-width: -webkit-fill-available;
     // border: black 5px dotted;
     // border: solid teal 10px;
 }
