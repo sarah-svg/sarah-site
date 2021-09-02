@@ -6,7 +6,7 @@ console.log(projectsData, 'data');
 
 export default function Page() {
   return (
-    <div className="page-container page">
+    <div className="page-container">
 
       <ProjectList projects={projectsData}/>
     </div>

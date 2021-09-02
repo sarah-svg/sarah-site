@@ -1,51 +1,169 @@
 
-// @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-// .page-container{
-//     margin-top: 2%;
-//     display: flex;
-//     width: 100%;
-//     height: 80%;
-//     // border: solid teal 10px;
-// }
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.page-container{
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    // font-size: 12px;
+    justify-items: center;
+    color: black;
+    background-color: aquamarine;
+    // border: black 5px dotted;
+    // border: solid teal 10px;
+}
 
 
 
-// .Projects-body{
+.Projects-body{
     
-//     list-style-type: none;
-//     display: flex;
-// 	flex-flow: row wrap;
-// 	justify-content: space-around;
-// 	margin: 10px 0;
-//     background-color: whitesmoke;
+    list-style-type: none;
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 5px 5px 5px 5px;
+    align-content: center;
+   grid-row-end: auto;
+    
 
-//     .Projects{
-//         width: fit-content;
-//         justify-content: space-between;
-// 	flex: 1;
-// 	// border: 1px dotted teal;
-// 	margin: 1px;
-// 	padding: 1px;
-// 	&:first-child { margin-left: 0; }
-// 	&:last-child { margin-right: 0; } 
-
-//     }
-//     .img{
-//         height: 25px;
-//         width: 25px;
-//         //border: rgb(205, 86, 50) 3px solid;
-//     }
-//     .img:hover{
-//         transform: scale(1.5);
-//         box-shadow: 0 0 10px red;
-//     }
-//     .desc{
-//         border: whitesmoke dotted 2px;
-//         width: 255px;
-//         height: 75px;
-//         overflow: scroll;
-//     }
-//     .name{
-//         font-family: 'Fjalla One', sans-serif;
-//     }
-// }
+    .Projects{
+    width: fit-content;
+    height: auto;
+    justify-content: space-between;
+	flex: 1;
+	// border: 9px dotted teal;
+	margin: 2px;
+	padding: 2px 1px 2px 1px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; } 
+    // align-items: center;
+    }
+    .imgProject{
+        height: 205px;
+        width: 255px;
+        border: aquamarine 3px solid;
+        padding:  3.75vh 3.75vh ;
+    
+    }
+    // img:hover{
+    //     transform: scale(1.5);
+    //     box-shadow: 0 0 30px red;
+    // }
+    .desc{
+        // border: whitesmoke dotted 2px;
+      border: black 2px solid;
+      overflow: scroll;
+      height: 40px;
+      background-color:white;
+      color: black;
+         
+    }
+    .name{
+        font-family: 'Fjalla One', sans-serif;
+        padding:  1px 1px ;
+    }
+    a{
+        color: black;
+        
+       
+    }
+    .space{
+       border: inset 3px black;
+        align-content:inherit;
+        // margin: 2px 2px 2px 2px;
+        padding: 1.5vh 1.5vh 1.5vh 1.5vh;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        // margin: 2px 2px 5px 5px;
+        align-content: center;
+        grid-row-end: auto;
+    }
+ 
+}
+@media (min-width: 400px){
+    .page-container{
+        margin-top: 2%;
+        display: flex;
+        width: 100%;
+        height: 60%;
+        // font-size: 12px;
+        justify-items: center;
+        color: black;
+        background-color: aquamarine;
+        // border: black 5px dotted;
+        // border: solid teal 10px;
+    }
+    
+    
+    
+    .Projects-body{
+        
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 5px 5px 5px 5px;
+        align-content: center;
+       grid-row-end: auto;
+        
+    
+        .Projects{
+        width: fit-content;
+        height: auto;
+        justify-content: space-between;
+        flex: 1;
+        // border: 9px dotted teal;
+        margin: 2px;
+        padding: 2px 1px 2px 1px;
+        &:first-child { margin-left: 0; }
+        &:last-child { margin-right: 0; } 
+        // align-items: center;
+        }
+        .imgProject{
+            height: 205px;
+            width: 255px;
+            border: aquamarine 3px solid;
+            padding:  3.75vh 3.75vh ;
+        
+        }
+        // img:hover{
+        //     transform: scale(1.5);
+        //     box-shadow: 0 0 30px red;
+        // }
+        .desc{
+            // border: whitesmoke dotted 2px;
+          border: black 2px solid;
+          overflow: scroll;
+          height: 40px;
+          background-color:white;
+          color: black;
+             
+        }
+        .name{
+            font-family: 'Fjalla One', sans-serif;
+            padding:  1px 1px ;
+        }
+        a{
+            color: black;
+            
+           
+        }
+        .space{
+           border: inset 3px black;
+            align-content:inherit;
+            // margin: 2px 2px 2px 2px;
+            padding: 1.5vh 1.5vh 1.5vh 1.5vh;
+            list-style-type: none;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            // margin: 2px 2px 5px 5px;
+            align-content: center;
+            grid-row-end: auto;
+        }
+     
+    }
+}

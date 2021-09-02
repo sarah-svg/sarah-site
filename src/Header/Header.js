@@ -14,11 +14,11 @@ export default function Header() {
         {/* <p className="title">Full Stack Software Engineer</p> */}
       </div>
 
-      <div className='nav'>
+      <span className='nav'>
         <Link activeClass="active" 
           to="home" 
           smooth={true}
-          className="nav-link">Home</Link>
+          className="nav-link"></Link>
         <Link activeClass="active" 
           to="about" 
           smooth={true}
@@ -31,12 +31,12 @@ export default function Header() {
           to="footer" 
           smooth={true}
           className="nav-link">Reach me at</Link>
-        <p>  
-          <a href="./resume2.pdf">Resume
-          </a>
-        </p>
    
-      </div>
+        <a className="a" href="./resume2.pdf">Resume
+        </a>
+        
+   
+      </span>
     </div>
   );
 }

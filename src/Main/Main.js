@@ -1,16 +1,15 @@
 import { useEffect } from 'react';
 import { Link } from 'react-scroll';
-// import About from '../About/About';
-// import Contact from '../Contact/Contact';
+
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Frameworks from './framworks';
-// import Mission from '../Mission/Mission';
 import Page from '../Projects/Page';
-// import Projects from '../Projects/Projects';
+
 
 
 import './Main.scss';
+import About from '../About/About';
 
 function Main() {
 
@@ -36,34 +35,31 @@ function Main() {
   }, []);
 
   return (
-    <div className="MAin">
+    <div className="Main">
       <Header />
-      
+      <p></p>
       <div className="Landing" name="home">
         <div className="landing-group">
           <div className="landing-header">
             <div className="typewriter">
               <h1 className="name">Sarah Skillen</h1>
             </div>
-          </div>       
-          <p className="title">Full Stack Software Engineer</p>
-          <Frameworks/>
-         
+               
+            {/* <p className="title">Full Stack Software Engineer</p>  */}
+            <Frameworks/>
+          </div> 
         </div>
         <div className="arrow">
-          <Link activeClass="active" to="about" smooth={true} >
+          <Link activeClass="active" to="footer" smooth={true} >
             <img src="./arrow.png" alt="down arrow" />
           </Link>
         </div>
       </div>
-      {/* <About />   */}
+      <About />  
+    
+      <Page />
+    
      
-      {/* <Page /> */}
-      {/* idk if i want <Mission /> */}
-      {/* moved to footer<Contact /> */}
-      {/* <div className="footer"> <Tech/>
-        <p> Created by Sarah Skillen &#169; 2021 </p>
-      </div> */}
       <Footer/>
     </div>
   );

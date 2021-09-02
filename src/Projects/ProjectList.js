@@ -13,11 +13,12 @@ function ProjectList({ projects }) {
   const elements = projects.map((project) => {
     return <li className="Projects"key={project.name}>
       <div className="name">{project.name}</div>
-      <img className="img"alt={project.name} src={project.demo}>
+      <img className="imgProject"alt={project.name} src={project.demo}>
       </img>
-      <p className="desc">{project.desc}</p>
-      <a href={project.repo} alt={project.repo}>GitHub</a> <br></br>
-      <a href={project.site} alt={project.site}>Deployed</a>
+      {/* <p className="desc">{project.desc}</p> */}
+      <span className="space">
+        <a className="repo"href={project.repo} alt={project.repo}>GitHub</a><br></br>
+        <a className="deployed"href={project.site} alt={project.site}>Deployed</a></span>
     </li>;
   });
   return (
