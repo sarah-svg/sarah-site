@@ -50,7 +50,7 @@ function Main() {
           </div> 
         </div>
         <div className="arrow">
-          <Link activeClass="active" to="footer" smooth={true} >
+          <Link activeClass="active" to="about" smooth={true} >
             <img src="./arrow.png" alt="down arrow" />
           </Link>
         </div>
