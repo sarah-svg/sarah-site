@@ -3,12 +3,16 @@
 	flex-flow: row wrap;
 	justify-content: center;
 	margin: 10px 0;
-    // border: 1px dotted teal;
+	//background-color: rgb(23, 42, 58);
+	
+    border: 1px dotted teal;
 }
 
 .column {
-    width: 20px;
+    // width: 20px;
 	flex: 1;
+	//background-color: rgb(23, 42, 58);
+	
 	// border: 1px dotted teal;
 	margin: 2px;
 	padding: 1px;
@@ -19,4 +23,29 @@
         width: 35px;
     }
 	
+
+@media(min-width: 600px){
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 10px 0;
+	//background-color: rgb(23, 42, 58);
+	
+    // border: 1px dotted teal;
+}
+}
+.column {
+    width: 20px;
+	flex: 1;
+	//background-color: rgb(23, 42, 58);
+	
+	// border: 1px dotted teal;
+	margin: 2px;
+	padding: 1px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+
+    img{
+        width: 35px;
+    }	
 }

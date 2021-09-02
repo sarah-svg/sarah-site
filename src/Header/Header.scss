@@ -1,52 +1,62 @@
 .Header {
-    background-color: black;
-
+    //background-color: black;
+    height: 40px;
     padding: 10px 10px;
+    background-color: black;
     display: flex;
     flex-direction: row;
+       width: 100vw;
+  
     justify-content: space-between;
     position: fixed;
     top: 0;
-    width: 100vw;
+  font-size: 20px;
     z-index: 1;
-    animation: glow 1s ease-in-out infinite alternate;
-    background-color: #000;
-        box-shadow: 0 0 40px 20px teal, 0 0 10px 25px #0ff;
-        // transition: box-shadow 4s ease-out;
-        // animation: spin 16s linear infinite;
-      
-    img{
+    align-content: center;
+    img title {
         width: 24px;
+    
+
+	margin: 9px;
+	padding: 3px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
     }
 
     .logo {
         img {
+             
+       
             height: 40px;
             cursor: pointer;
         }
     }
-
+     flex-flow: row ;
     .nav {
         display: flex;
-        align-items: center;
+        align-items: right;
         position: relative;
         right: 20px;
+        transition: all 4s ease-in-out; 
+
 
         a, Link {
             padding: 0px 10px;
             margin: 0px 5px;
-            text-decoration: none;
+            // text-decoration: none;
+            align-items: left;
         }
     }
 
-    a, .nav-link {
+    .a, .nav-link {
         text-decoration: none;
-        color: teal;
+        color: aquamarine;
     }
     
     a:hover, .nav-link:hover {
-        text-decoration: underline;
+        
         cursor: pointer;
+        transform: scale(1.25); 
     }
     
 }
@@ -71,5 +81,8 @@
         .nav a {
             padding: 0px 6px;
         }
+    }
+    .a{
+        color:aquamarine;
     }
 }

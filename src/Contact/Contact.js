@@ -4,10 +4,7 @@ import './Contact.scss';
 export default function Contact() {
   return (
     <>
-      <div className="Contact" name="contact">
-  
-
-   
+      <div className="Contact C" name="contact">
         <div className="column">
           <a href="mailto: kjskillen@gmail.com" >
             <img src="./email.png" alt="icon link to Sarah's email" /></a>
@@ -20,12 +17,8 @@ export default function Contact() {
           <a href="https://github.com/sarah-svg">
             <img src="./git.png" alt="icon link to Sarah's github" /></a>
         </div>   
-   
-        <span className="tooltip-text"></span>
-   
       </div>   
-      <p> Created by Sarah Skillen &#169; 2021 </p> 
-
+      <p className='P'> Created by Sarah Skillen &#169; 2021 </p> 
     </>
   );
 }
