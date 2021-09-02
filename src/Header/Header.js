@@ -7,11 +7,7 @@ export default function Header() {
   return (
     <div className='Header' id='Header'>
       <div className='logo'>  
-        {/* <a href='/'>
-          <img src='./logo.png' alt='logo with s' />
-        
-        </a>   */}
-        {/* <p className="title">Full Stack Software Engineer</p> */}
+
       </div>
 
       <span className='nav'>

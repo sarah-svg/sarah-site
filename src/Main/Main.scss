@@ -6,11 +6,11 @@
   // width: 100%;
 }
 .landing-header{
-  height: 50vh;
+  height: 58vh;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 59vh;
+  margin-top: 39vh;
   
 }
 .typewriter h1 {
@@ -43,6 +43,7 @@
   border-right: .15em solid transparent; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  justify-content: center;
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(40, end),

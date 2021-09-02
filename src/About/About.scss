@@ -15,37 +15,65 @@
         padding: 0 20vw;
         // text-indent: 50px;
         text-align: center;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid white; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .1em; /* Adjust as needed */
-        animation: 
-          typing 3.5s steps(30, end),
-          blink-caret .5s step-end infinite;
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid white;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .1em;
+        /* Adjust as needed */
+        animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
     }
-    .job{
+
+    .job {
         color: black;
-        text-decoration: underline;
-    
+
+        // text-decoration: underline;
+        font-size: 60px;
+        text-shadow: teal 0px 0px 2px, teal 0px 0px 10px, teal 0px 0px 5px, aquamarine 0px 0px 10px, aquamarine 0px 0px 15px, aquamarine 0px 0px 40px, aquamarine 0px 0px 50px, 2px 2px 7px rgba(48, 206, 206, 0);
+
     }
+
     @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-        40% {transform: translateY(-30px);} 
-        60% {transform: translateY(-15px);} 
-     }
-    
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+
     p:first-of-type {
         font-size: 1.8rem;
         text-indent: 0;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid white; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .1em; /* Adjust as needed */
-        animation: 
-          typing 3.5s steps(30, end),
-          blink-caret .5s step-end infinite;
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid white;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .1em;
+        /* Adjust as needed */
+        animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
     }
 }
 
@@ -55,19 +83,24 @@
         p {
             padding: 0 12vw;
             margin: 0 0 3vh 0;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid white; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .1em; /* Adjust as needed */
-            animation: 
-              typing 3.5s steps(30, end),
-              blink-caret .5s step-end infinite;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid white;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .1em;
+            /* Adjust as needed */
+            animation:
+                typing 3.5s steps(30, end),
+                blink-caret .5s step-end infinite;
         }
     }
 
 }
-  
+
 @media (max-width: 600px) {
     .About {
         min-height: 75vh;
@@ -76,50 +109,63 @@
         p {
             font-size: 1.1rem;
             margin: 0 0 2vh 0;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid white; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .1em; /* Adjust as needed */
-            animation: 
-              typing 3.5s steps(30, end),
-              blink-caret .5s step-end infinite;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid white;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .1em;
+            /* Adjust as needed */
+            animation:
+                typing 3.5s steps(30, end),
+                blink-caret .5s step-end infinite;
         }
-        
+
         p:first-of-type {
             font-size: 1.3rem;
             width: 85vw;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid white; /* The typwriter cursor */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .1em; /* Adjust as needed */
-            animation: 
-              typing 3.5s steps(30, end),
-              blink-caret .5s step-end infinite;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid white;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .1em;
+            /* Adjust as needed */
+            animation:
+                typing 3.5s steps(30, end),
+                blink-caret .5s step-end infinite;
         }
     }
 }
 
-@media screen and (orientation:landscape)
-and (min-device-width: 568px) 
-and (max-device-width: 823px) {
-  .About {
-    height: 100vh;
-    padding-top: 3rem;
+@media screen and (orientation:landscape) and (min-device-width: 568px) and (max-device-width: 823px) {
+    .About {
+        height: 100vh;
+        padding-top: 3rem;
 
-    p {
-        font-size: 1.1rem;
-        margin: 0 0 5vh 0;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid white; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .1em; /* Adjust as needed */
-        animation: 
-          typing 3.5s steps(30, end),
-          blink-caret .5s step-end infinite;
+        p {
+            font-size: 1.1rem;
+            margin: 0 0 5vh 0;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid white;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .1em;
+            /* Adjust as needed */
+            animation:
+                typing 3.5s steps(30, end),
+                blink-caret .5s step-end infinite;
 
+        }
     }
-  }
 }
