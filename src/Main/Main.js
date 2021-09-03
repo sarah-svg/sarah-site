@@ -1,7 +1,7 @@
 
 import { Link } from 'react-scroll';
 
-import Footer from '../Footer/Footer';
+// import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Frameworks from './framworks';
 // import Page from '../Projects/Page';
