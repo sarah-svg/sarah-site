@@ -1,183 +1,384 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
-.page-container{
-    margin-top: 2%;
+.portfolioContainer {
     display: flex;
-    width: 100%;
-    height: 60vh;
-    // font-size: 12px;
-    justify-items: center;
-    color: black;
-    background-color: transparent;
-    // opacity: 0.45;
-    filter: brightness(10px);
-    min-width: -webkit-fill-available;
-    max-width: -webkit-fill-available;
-    // border: black 5px dotted;
-    // border: solid teal 10px;
-}
-
-
-
-.Projects-body{
-    
-    list-style-type: none;
-    display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	margin: 5px 5px 5px 5px;
-    align-content: center;
-   grid-row-end: auto;
-    
-
-    .Projects{
-    width: fit-content;
-    height: auto;
     justify-content: space-between;
-	flex: 1;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
    
-	// border: 9px dotted teal;
-    margin: 1vh 1vh 1vh 5vh;
-	padding: 2px 1px 2px 1px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; } 
-    // align-items: center;
-    }
-    .imgProject{
-        height: 205px;
-        width: 255px;
-       
-        padding:  3.75vh 3.75vh ;
-        opacity: 1;
-        
-       
-    }
+    color: white;
+    border: black 15px dotted;
+    //////@at-root
+    background: #F007BA;
+    background: #F007BA;
+    background: -moz-linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
+    background: -webkit-linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
+    background: linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
    
-    // img:hover{
-    //     transform: scale(1.5);
-    //     box-shadow: 0 0 30px red;
-    // }
-    .desc{
-        // border: whitesmoke dotted 2px;
-      border: black 2px solid;
-      overflow: scroll;
-      height: 40px;
-      background-color:white;
-      color: black;
-         
-    }
-    .name{
-        font-family: 'Fjalla One', sans-serif;
-        padding:  1px 1px ;
-    }
-    a{
-        color: black;
-        background-color: aquamarine;
-        
-       
-    }
-    .space{
-        background-color: aquamarine;
-       border: inset 3px black;
-       position: fixed;
-        align-content:inherit;
-        // margin: 2px 2px 2px 2px;
-        padding: 1.5vh 1.5vh 1.5vh 1.5vh;
-        list-style-type: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        // margin: 2px 2px 5px 5px;
-        align-content: space-between;
-        grid-row-end: auto;
-    }
- 
-}
-@media (min-width: 400px){
-    .page-container{
-        margin: 1vh 1vh 1vh 5vh;
-        display: flex;
-        width: 100%;
-        height: 60%;
-        // font-size: 12px;
-        justify-items: center;
-        color: black;
-        background-color: transparent;
-        // border: black 5px dotted;
-        // border: solid teal 10px;
-    }
-    
-    
-    
-    .Projects-body{
-        
-        list-style-type: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        margin: 5px 5px 5px 5px;
-        align-content: center;
-       grid-row-end: auto;
-        
-    
-        .Projects{
-        width: fit-content;
-        height: auto;
-        justify-content: space-between;
-        flex: 1;
-        // border: 9px dotted teal;
-        margin: 1vh 1vh 1vh 5vh;
-        padding: 2px 1px 2px 1px;
-        &:first-child { margin-left: 0; }
-        &:last-child { margin-right: 0; } 
-        // align-items: center;
-        }
-        .imgProject{
-            height: 205px;
-            width: 255px;
-            border: aquamarine 3px solid;
-            padding: 4vh 4vh 4vh 4vh ;
-          
 
-        
-        }
-        // img:hover{
-        //     transform: scale(1.5);
-        //     box-shadow: 0 0 30px red;
-        // }
-        .desc{
-            // border: whitesmoke dotted 2px;
-          border: black 2px solid;
-          overflow: scroll;
-          height: 40px;
-          background-color:white;
-          color: black;
-             
-        }
-        .name{
-            font-family: 'Fjalla One', sans-serif;
-            padding:  1px 1px ;
-            color: white;
-        }
-        a{
-            color: black;
-            
-           
-        }
-        .space{
-           border: inset 3px black;
-            align-content:inherit;
-            // margin: 2px 2px 2px 2px;
-            padding: 1.5vh 1.5vh 1.5vh 1.5vh;
-            list-style-type: none;
-            display: flex;
-            flex-flow: row wrap;
+.titleLeft {
+    transform: rotate(270deg);
+    font-size: 6em;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    opacity: 0.3;
+    position: fixed;
+    left: -14vw;
+    top: 47vh;
+    font-weight: 300;
+    color: white;
+    text-shadow: 6px 6px 1px black;
+}
+
+.Link {
+    color: white;
+    font-size: 58px;
+    text-decoration: none;
+    align-items: center;
+    
+}
+
+img {
+    display: flex;
+    position: inherit;
+    width: 35vh;
+    height: 35vh;
+    // margin-top: 5vh ;
+    // margin-bottom: 5vh;
+    margin-left: 7vh;
+    // margin-left: 15vh;
+
+
+}
+
+.portfolioMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 90%;
+    margin: 5vh 2em 3em 10em;
+    padding: 5vh;
+
+    .portfolioGrid {
+
+        height: 40%;
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1em 0 1em 0;
+
+        .projectItem {
+            background-color: black;
+            width: 50%;
             justify-content: center;
-            // margin: 2px 2px 5px 5px;
-            align-content: center;
-            grid-row-end: auto;
+            margin: 1em;
+            border: 1px solid rgba(176, 182, 251, 0.2);
+            box-shadow: rgba(176, 182, 251, 0.3) 0px 2px 5px 1px, rgba(176, 182, 251, 0.23) 0px 2px 6px 1px, rgba(0, 0, 0, 0.4) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.7) 0px 30px 60px -30px,
+                rgba(0, 0, 0, 0.7) 0px -2px 6px 0px inset;
         }
-     
+
+        .projectItem:hover {
+            box-shadow: rgba(176, 182, 251, 0.3) 0px 2px 5px 1px, rgba(176, 182, 251, 0.23) 0px 2px 6px 1px, rgba(0, 0, 0, 0.7) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.7) 0px 30px 60px -30px,
+                rgba(0, 0, 0, 0.7) 0px -2px 6px 0px inset;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .projectItem:active {
+            transform: scale(1)
+        }
+
+        .projectName {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-align: center;
+            color: white;
+            opacity: 0.7;
+            margin-top: 1em;
+        }
     }
+}
+
+///closing} herer=====
+
+@media (min-width: 2001px) {
+    .portfolioContainer {
+
+        .titleLeft {
+            left: -13vw;
+            font-size: 10em;
+        }
+
+        .portfolioMain {
+            margin: 7vh 2em 3em 10em;
+
+            .portfolioGrid {
+
+                .projectItem {
+
+                    .projectName {
+                        font-size: 2em;
+                    }
+
+                    .projectImage {
+                        height: 15vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 2000px) {
+    .portfolioContainer {
+
+        .titleLeft {
+            left: -11vw;
+            font-size: 7em;
+        }
+
+        .portfolioMain {
+            margin: 7vh 2em 3em 10em;
+
+            .portfolioGrid {
+
+                .projectItem {
+
+                    .projectName {
+                        font-size: 1.5em;
+                    }
+
+                    .projectImage {
+                        height: 30vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .portfolioContainer {
+
+        .titleLeft {
+            left: -13vw;
+            font-size: 6em;
+        }
+
+        .portfolioMain {
+            margin: 7vh 2em 3em 10em;
+
+            .portfolioGrid {
+
+                .projectItem {
+
+                    .projectName {
+                        font-size: 1em;
+                    }
+
+                    .projectImage {
+                        height: 25vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .portfolioContainer {
+
+        .titleLeft {
+            left: -12vw;
+            font-size: 5.5em;
+        }
+
+        .portfolioMain {
+            margin: 7vh 2em 3em 10em;
+
+            .portfolioGrid {
+
+                .projectItem {
+
+                    .projectName {
+                        font-size: 1em;
+                    }
+
+                    .projectImage {
+                        height: 25vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .portfolioContainer {
+
+        .titleLeft {
+            left: -16vw;
+            font-size: 6em;
+        }
+
+        .portfolioMain {
+            margin: 7vh 2em 3em 10em;
+
+            .portfolioGrid {
+
+                .projectItem {
+
+                    .projectName {
+                        font-size: 1em;
+                    }
+
+                    .projectImage {
+                        height: 25vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .portfolioContainer {
+
+        // .titleLeft {
+        //     display: none;
+        // }
+
+        .portfolioMain {
+            margin: 5vh 2em 2em 2em;
+
+            .titleTop {
+                font-size: 5em;
+                letter-spacing: 0.1em;
+                margin: 0 0 0.5em 0;
+                padding: 0;
+                height: max-content;
+                opacity: 0.3;
+                z-index: -1;
+                font-weight: 300;
+                color: #B0B6FB;
+                text-shadow: 6px 6px 1px black;
+            }
+
+            .portfolioGrid {
+
+                .projectItem {
+                    margin: 2em;
+
+                    .projectName {
+                        font-size: 2em;
+                    }
+
+                    .projectFigure {
+
+                        .projectImage {
+                            height: 30vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolioContainer {
+
+        .portfolioMain {
+
+            .titleTop {
+                font-size: 3em;
+                margin: 0;
+            }
+
+            .portfolioGrid {
+
+                .projectItem {
+                    margin: 1em;
+
+                    .projectName {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolioContainer {
+
+        .portfolioMain {
+
+            .titleTop {
+                font-size: 2.5em;
+                margin: 0;
+            }
+
+            .portfolioGrid {
+
+                .projectItem {
+                    margin: 1em;
+
+                    .projectName {
+                        font-size: 1em;
+                    }
+
+                    .projectFigure {
+
+                        .projectImage {
+                            height: 20vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolioContainer {
+
+        .portfolioMain {
+
+            .titleTop {
+                font-size: 2.2em;
+            }
+
+            .portfolioGrid {
+
+                .projectItem {
+
+                    .projectName {
+                        font-size: 0.9em;
+                    }
+
+                    .projectFigure {
+
+                        .projectImage {
+                            height: 16vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 }

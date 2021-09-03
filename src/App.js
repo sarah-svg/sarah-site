@@ -4,17 +4,19 @@ import {
   Switch
 } from 'react-router-dom';
 import Main from './Main/Main.js';
-import './App.scss';
+import ListProjects from './Projects/ListProjects.jsx';
+
 function App() {
   return (
-    <div className="App">
-      <div className="shine">
+    <div >
+      <div >
         <Router>
           <Switch> 
             <Route exact path='/'
               render={(routerProps) => <Main
                 {...routerProps}/>} 
-            /> 
+            />  
+            <Route exact path='/page' component={ListProjects}/>
           </Switch>
         </Router> 
       </div>

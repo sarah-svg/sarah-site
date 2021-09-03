@@ -1,120 +1,120 @@
-// .Mission,
-// .inner {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     // -moz-box-shadow: inset 0 0 10px #000000;
-//     // -webkit-box-shadow: inset 0 0 10px #000000;
-//     // box-shadow: inset 0 0 10px #000000;
+.Mission,
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // -moz-box-shadow: inset 0 0 10px #000000;
+    // -webkit-box-shadow: inset 0 0 10px #000000;
+    // box-shadow: inset 0 0 10px #000000;
   
 
-// }
+}
 
-// .inner {
-//     font-size: 80px;
-//     // color: teal;
-//     text-align: center;
-//     -webkit-animation: glow .7s ease-in-out infinite alternate;
-//     -moz-animation: glow 1s ease-in-out infinite alternate;
-//     animation: glow 1s ease-in-out infinite alternate;
+.inner {
+    font-size: 80px;
+    // color: teal;
+    text-align: center;
+    -webkit-animation: glow .7s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 
 
-// }
+}
 
-// @keyframes glow {
-//     from {
-//         box-shadow: 0 0 10px teal, 0 0 10px teal, 0 0 30px teal, 0 0 40px teal, 0 0 50px teal, 0 0 40px teal, 0 0 70px teal;
-//     }
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px teal, 0 0 10px teal, 0 0 30px teal, 0 0 40px teal, 0 0 50px teal, 0 0 40px teal, 0 0 70px teal;
+    }
 
-//     to {
-//         box-shadow: 0 0 10px #fff, 0 0 30px teal, 0 0 40px teal, 0 0 50px teal, 0 0 40px teal, 0 0 70px teal, 0 0 80px teal;
-//     }
-// }
+    to {
+        box-shadow: 0 0 10px #fff, 0 0 30px teal, 0 0 40px teal, 0 0 50px teal, 0 0 40px teal, 0 0 70px teal, 0 0 80px teal;
+    }
+}
 
-// .Mission {
-//     min-height: 50vh;
-//     margin: 0;
-//     padding: 0;
+.Mission {
+    min-height: 50vh;
+    margin: 0;
+    padding: 0;
 
-//     background-color: black;
-//     color: teal;
+    background-color: black;
+    color: teal;
 
-//     p {
-//         font-size: 1.3rem;
+    p {
+        font-size: 1.3rem;
       
-//     }
+    }
 
-//     .inner {
-//         padding: 2vh;
-//         margin: 2vh;
-//         width: 80vw;
-//         height: 45vh;
-//         background-color: #fff;
-//         text-align: center;
+    .inner {
+        padding: 2vh;
+        margin: 2vh;
+        width: 80vw;
+        height: 45vh;
+        background-color: #fff;
+        text-align: center;
 
-//         border-radius: 12px;
+        border-radius: 12px;
 
 
-//         p {
-//             margin: 1vh;
-//             padding: 1vh;
-//             width: 70%;
-//         }
+        p {
+            margin: 1vh;
+            padding: 1vh;
+            width: 70%;
+        }
 
-//         p:first-of-type {
-//             font-size: 1.8rem;
-//             margin-top: 0;
-//         }
+        p:first-of-type {
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
 
-//     }
+    }
 
-// }
+}
 
-// @media (max-width: 992px) {
-//     .Mission {
-//         .inner {
-//             width: 85vw;
-//             height: 50vh;
+@media (max-width: 992px) {
+    .Mission {
+        .inner {
+            width: 85vw;
+            height: 50vh;
 
-//             p {
-//                 width: 90%;
-//             }
+            p {
+                width: 90%;
+            }
 
-//             p:first-of-type {
-//                 font-size: 1.8rem;
-//             }
-//         }
-//     }
-// }
+            p:first-of-type {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
 
-// @media (max-width: 600px) {
-//     .Mission {
-//         .inner {
-//             height: 50vh;
+@media (max-width: 600px) {
+    .Mission {
+        .inner {
+            height: 50vh;
 
-//             p {
-//                 width: 90%;
-//                 font-size: 1.1rem;
-//             }
+            p {
+                width: 90%;
+                font-size: 1.1rem;
+            }
 
-//             p:first-of-type {
-//                 font-size: 1.4rem;
-//             }
-//         }
-//     }
-// }
+            p:first-of-type {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
 
-// @media screen and (orientation:landscape) and (min-device-width: 568px) and (max-device-width: 823px) {
-//     .Mission {
-//         .inner {
-//             height: 70vh;
+@media screen and (orientation:landscape) and (min-device-width: 568px) and (max-device-width: 823px) {
+    .Mission {
+        .inner {
+            height: 70vh;
 
-//             p {
-//                 padding: 2rem;
-//                 font-size: 1.1rem;
-//                 margin: 0 0 5vh 0;
-//             }
-//         }
-//     }
-// }
+            p {
+                padding: 2rem;
+                font-size: 1.1rem;
+                margin: 0 0 5vh 0;
+            }
+        }
+    }
+}
