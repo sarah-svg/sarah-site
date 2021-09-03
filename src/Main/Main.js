@@ -1,40 +1,14 @@
 
 import { Link } from 'react-scroll';
 
-// import Footer from '../Footer/Footer';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Frameworks from './framworks';
-// import Page from '../Projects/Page';
-
-
-
-import './Main2.scss';
+import './Main.scss';
 import About from '../About/About';
-import { useEffect } from 'react';
+
 
 function Main() {
-
-  useEffect(function onFirstMount() {
-
-    window.onscroll = function() {scrollFunction();};
-        
-    function scrollFunction() {
-      const arrow = document.querySelector('.arrow');
-
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        arrow.classList.add('hidden');
-      } else {
-        arrow.classList.remove('hidden');
-      }
-    }
-      
-    window.addEventListener('scroll', scrollFunction);
-        
-    return () => {
-      window.removeEventListener('scroll', scrollFunction);
-    };
-  }, []);
-
   return (
     <div>
       <div className="Main">
@@ -47,8 +21,6 @@ function Main() {
                 <div className="typewriter">
                   <h1 className="name">Sarah Skillen</h1>
                 </div>
-               
-                {/* <p className="title">Full Stack Software Engineer</p>  */}
                 <Frameworks/>
               </div> 
             </div>
@@ -58,14 +30,11 @@ function Main() {
               </Link>
             </div>
           </div>
-          <About />  
-    
-          {/* <Page /> */}
-    
-     
-          {/* <Footer/> */}
+          <About />   
+          <Footer/>
         </div>
       </div>
+      <p className='P'> Created by Sarah Skillen &#169; 2021 </p> 
     </div>
   );
 }

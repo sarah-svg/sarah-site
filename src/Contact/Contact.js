@@ -2,23 +2,45 @@ import React from 'react';
 import './Contact.scss';
 
 export default function Contact() {
+
+  const git = 'https://github.com/sarah-svg';
+  const handleMainGit = () => {
+    window.open(git);
+  };
+  const linkdin = 'https://www.linkedin.com/in/sarah-skillen/';
+  const handleLinkden = () => {
+    window.open(linkdin);
+  };
+  const email = 'mailto: kjskillen@gmail.com';
+  const handleEmail = () => {
+    window.open(email);
+  };
+
   return (
     <>
       <div className="Contact C" name="contact">
         <div className="column">
-          <a href="mailto: kjskillen@gmail.com" >
-            <img className="imgHeader" src="./email.png" alt="icon link to Sarah's email" /></a>
+          {/* <a href="mailto: kjskillen@gmail.com" > */}
+          <button onClick={handleEmail}>
+            <img className="imgHeader" src="./email.png" alt="icon link to Sarah's email" /></button>
+          {/* </a> */}
         </div>
         <div className="column">
-          <a href="https://www.linkedin.com/in/sarah-skillen-7339b61b8/" >
-            <img className="imgHeader" src="./linkdin.png" alt="icon link to sarah's linkedin" /></a>
+          {/* <a href="https://www.linkedin.com/in/sarah-skillen/" > */}
+          <button onClick={handleLinkden}>
+            <img className="imgHeader" src="./linkdin.png" alt="icon link to sarah's linkedin" /></button>
+          {/* </a> */}
         </div> 
         <div className="column">
-          <a href="https://github.com/sarah-svg">
-            <img className="imgHeader" src="./git.png" alt="icon link to Sarah's github" /></a>
-        </div>   
+          {/* <a href="https://github.com/sarah-svg"> */}
+          <button onClick={handleMainGit}>
+            <img className="imgHeader" src="./git.png" alt="icon link to Sarah's github" />
+          </button>
+         
+          {/* </a> */}
+        </div>    
       </div>   
-      <p className='P'> Created by Sarah Skillen &#169; 2021 </p> 
+   
     </>
   );
 }
