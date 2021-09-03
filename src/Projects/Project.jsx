@@ -16,7 +16,7 @@ export const Project = ({ close, name, demo, repo, site, desc }) => {
   };
 
   return (
-    <div>
+    <div className="contain">
      
       <svg 
         className="close"
@@ -35,18 +35,21 @@ export const Project = ({ close, name, demo, repo, site, desc }) => {
       </svg>
 
       <h2 className="name">{name}</h2>
-      <img src={demo} alt={name}height="250vh" className="imgae"/>
+      <img src={demo} alt={name}height="250vh" className="image"/>
       {/* <div className="technologies">technologies.................</div> */}
-      <div className="description">{desc}</div>
+      <span className="description">{desc}</span>
       <section className="detailsFooter">
-        {site &&
+      
         <>
           <button 
             className="link"
-            onClick={handleSite}>Deployed</button>
+            onClick={handleSite}>Deployed
+            {/* <img src="./git.png" alt="icon link to Sarah's github" height="2px"/> */}
+            
+          </button>
           <span>&nbsp; | &nbsp;</span>
         </>
-        }
+        
         <button 
           className="link"
           onClick={handleRepo}>GitHub</button>

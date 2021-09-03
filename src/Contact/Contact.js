@@ -27,7 +27,7 @@ export default function Contact() {
         </div>
         <div className="column">
           {/* <a href="https://www.linkedin.com/in/sarah-skillen/" > */}
-          <button onClick={handleLinkden}>
+          <button className="button" onClick={handleLinkden}>
             <img className="imgHeader" src="./linkdin.png" alt="icon link to sarah's linkedin" /></button>
           {/* </a> */}
         </div> 
