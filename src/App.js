@@ -4,9 +4,8 @@ import {
   Switch
 } from 'react-router-dom';
 import Main from './Main/Main.js';
-// import './App.scss';className="App"className="shine"
+import ListProjects from './Projects/ListProjects.jsx';
 
-import Page from './Projects/Page.js';
 function App() {
   return (
     <div >
@@ -17,8 +16,7 @@ function App() {
               render={(routerProps) => <Main
                 {...routerProps}/>} 
             />  
-           
-            <Route exact path='/page' component={Page}/>
+            <Route exact path='/page' component={ListProjects}/>
           </Switch>
         </Router> 
       </div>
