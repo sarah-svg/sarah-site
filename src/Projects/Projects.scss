@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rampart+One&family=Shadows+Into+Light&display=swap');
+
+
 .portfolioContainer {
     display: flex;
     justify-content: space-between;
@@ -7,7 +11,7 @@
     width: 100%;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-   
+   margin: 0;
     color: white;
     border: black 15px dotted;
     //////@at-root
@@ -33,28 +37,52 @@
     color: white;
     text-shadow: 6px 6px 1px black;
 }
-
+h2{
+    font-family: 'Rampart One', cursive;
+    font-size: bold;
+    font-size: 2em;
+    color: black;
+    text-shadow:-moz-linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
+    background: -webkit-linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
+  
+}
 .Link {
-    color: white;
-    font-size: 3vh;
+    font-family: 'Rampart One', cursive;
+    font-size: bold;
+    font-size: 3em;
+    color: black;
+    // font-size: 6vh;
     text-decoration: none;
     align-items: center;
-    
+    transition: transform .2s;
 }
-
-img {
-    display: flex;
+.Link :hover{
+    transform: scale(1.5);
+}
+span{
+    font-family: 'Shadows Into Light', cursive;    font-size: 1.45em;
+    font-weight: bold;
+}
+.image {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     position: inherit;
-    width: 35vh;
-    height: 35vh;
+    width: 25vh;
+    height: 15vh;
+    justify-content: center;
+    // transition:transform 0.25s ease;
     // margin-top: 5vh ;
     // margin-bottom: 5vh;
-    margin-left: 7vh;
-    // margin-left: 15vh;
+    // margin: 5vh;
+  border: grey inset 5px;
+  margin-bottom: 1em;
 
 
 }
-
+//   .image:hover {
+//     -webkit-transform:scale(1.5); /* or some other value */
+//     transform:scale(1.5);
+// }
 .portfolioMain {
     display: flex;
     justify-content: center;
@@ -78,26 +106,30 @@ img {
         margin: 1em 0 1em 0;
 
         .projectItem {
-            background-color: black;
+            background-color:transparent;
+            color: black;
             width: 50%;
             justify-content: center;
-            margin: 1em;
+            margin: 5em;
             border: 1px solid rgba(176, 182, 251, 0.2);
             box-shadow: rgba(176, 182, 251, 0.3) 0px 2px 5px 1px, rgba(176, 182, 251, 0.23) 0px 2px 6px 1px, rgba(0, 0, 0, 0.4) 0px 50px 100px -20px,
                 rgba(0, 0, 0, 0.7) 0px 30px 60px -30px,
                 rgba(0, 0, 0, 0.7) 0px -2px 6px 0px inset;
+        }
+        .contain{
+            margin: 1em 3em 3em 3em;
         }
 
         .projectItem:hover {
             box-shadow: rgba(176, 182, 251, 0.3) 0px 2px 5px 1px, rgba(176, 182, 251, 0.23) 0px 2px 6px 1px, rgba(0, 0, 0, 0.7) 0px 50px 100px -20px,
                 rgba(0, 0, 0, 0.7) 0px 30px 60px -30px,
                 rgba(0, 0, 0, 0.7) 0px -2px 6px 0px inset;
-            transform: scale(1.05);
-            cursor: pointer;
+             transform: scale(1);
+            cursor: grabbing; 
         }
 
         .projectItem:active {
-            transform: scale(1)
+            transform: scale(1.75)
         }
 
         .projectName {
@@ -107,7 +139,7 @@ img {
             text-align: center;
             color: white;
             opacity: 0.7;
-            margin-top: 1em;
+            margin-top: 0;
         }
     }
 }

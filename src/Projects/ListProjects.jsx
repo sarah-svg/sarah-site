@@ -34,7 +34,7 @@ export default function ListProjects() {
       </h1> */}
       <section className='portfolioMain'>
         {isMobile 
-          && <div className='titleTop'>PROJECTS</div>}
+          && <div className='titleTop'></div>}
         <section className='portfolioGrid'>
           {portfolioList}
         </section>
