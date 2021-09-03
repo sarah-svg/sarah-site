@@ -36,33 +36,35 @@ function Main() {
   }, []);
 
   return (
-    <div className="Main">
-      <div className="shine">
-        <Header />
-        <p></p>
-        <div className="Landing" name="home">
-          <div className="landing-group">
-            <div className="landing-header">
-              <div className="typewriter">
-                <h1 className="name">Sarah Skillen</h1>
-              </div>
+    <div>
+      <div className="Main">
+        <div className="shine">
+          <Header />
+          <p></p>
+          <div className="Landing" name="home">
+            <div className="landing-group">
+              <div className="landing-header">
+                <div className="typewriter">
+                  <h1 className="name">Sarah Skillen</h1>
+                </div>
                
-              {/* <p className="title">Full Stack Software Engineer</p>  */}
-              <Frameworks/>
-            </div> 
+                {/* <p className="title">Full Stack Software Engineer</p>  */}
+                <Frameworks/>
+              </div> 
+            </div>
+            <div className="arrow">
+              <Link activeClass="active" to="about" smooth={true} >
+                <img src="./arrow.png" alt="down arrow" />
+              </Link>
+            </div>
           </div>
-          <div className="arrow">
-            <Link activeClass="active" to="about" smooth={true} >
-              <img src="./arrow.png" alt="down arrow" />
-            </Link>
-          </div>
-        </div>
-        <About />  
+          <About />  
     
-        {/* <Page /> */}
+          {/* <Page /> */}
     
      
-        <Footer/>
+          {/* <Footer/> */}
+        </div>
       </div>
     </div>
   );
