@@ -16,12 +16,10 @@
     color: white;
     border: black 15px dotted;
     //////@at-root
-    background: #F007BA;
-    background: #F007BA;
-    background: -moz-linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
-    background: -webkit-linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
-    background: linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
-   
+    background: #CE0CA1;
+    background: -moz-linear-gradient(45deg, #CE0CA1 0%, #0ACCA3 62%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(45deg, #CE0CA1 0%, #0ACCA3 62%, #FFFFFF 100%);
+    background: linear-gradient(45deg, #CE0CA1 0%, #0ACCA3 62%, #FFFFFF 100%);
 
 .titleLeft {
     transform: rotate(270deg);
@@ -52,6 +50,7 @@ h2{
     font-size: bold;
     font-size: 3em;
     color: black;
+   
     // font-size: 6vh;
     text-decoration: none;
     align-items: center;
