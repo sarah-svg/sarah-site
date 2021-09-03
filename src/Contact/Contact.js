@@ -7,15 +7,15 @@ export default function Contact() {
       <div className="Contact C" name="contact">
         <div className="column">
           <a href="mailto: kjskillen@gmail.com" >
-            <img src="./email.png" alt="icon link to Sarah's email" /></a>
+            <img className="imgHeader" src="./email.png" alt="icon link to Sarah's email" /></a>
         </div>
         <div className="column">
           <a href="https://www.linkedin.com/in/sarah-skillen-7339b61b8/" >
-            <img src="./linkdin.png" alt="icon link to sarah's linkedin" /></a>
+            <img className="imgHeader" src="./linkdin.png" alt="icon link to sarah's linkedin" /></a>
         </div> 
         <div className="column">
           <a href="https://github.com/sarah-svg">
-            <img src="./git.png" alt="icon link to Sarah's github" /></a>
+            <img className="imgHeader" src="./git.png" alt="icon link to Sarah's github" /></a>
         </div>   
       </div>   
       <p className='P'> Created by Sarah Skillen &#169; 2021 </p> 

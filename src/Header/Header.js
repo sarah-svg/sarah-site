@@ -26,7 +26,7 @@ export default function Header() {
         <Link activeClass="active" 
           to="footer" 
           smooth={true}
-          className="nav-link">Reach me at</Link>
+          className="nav-link">Contact</Link>
    
         <a className="a" href="./resume2.pdf">Resume
         </a>

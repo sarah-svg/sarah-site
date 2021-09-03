@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 .page-container{
-    margin-top: 2%;
+    margin-top: 10%;
     display: flex;
     width: 100%;
     height: 60vh;
+    font-size: 25px;
+    font-weight: bolder;
     // font-size: 12px;
     justify-items: center;
     color: black;
@@ -36,10 +38,11 @@
     height: auto;
     justify-content: space-between;
 	flex: 1;
+    text-shadow: teal 0px 0px 1px, teal 0px 0px 3px, teal 0px 0px 5px, aquamarine 0px 0px 10px, aquamarine 0px 0px 90px, aquamarine 0px 0px 1.4px, aquamarine 0px 0px 1.4px, 2px 2px 7px rgba(210, 241, 241, 0);
    
 	// border: 9px dotted teal;
     margin: 1vh 1vh 1vh 5vh;
-	padding: 2px 1px 2px 1px;
+	// padding: 2px 1px 2px 1px;
 	&:first-child { margin-left: 0; }
 	&:last-child { margin-right: 0; } 
     // align-items: center;
@@ -48,7 +51,7 @@
         height: 205px;
         width: 255px;
        
-        padding:  3.75vh 3.75vh ;
+         padding:  .75vh .75vh ;
         opacity: 1;
         
        
@@ -58,15 +61,15 @@
     //     transform: scale(1.5);
     //     box-shadow: 0 0 30px red;
     // }
-    .desc{
-        // border: whitesmoke dotted 2px;
-      border: black 2px solid;
-      overflow: scroll;
-      height: 40px;
-      background-color:white;
-      color: black;
+    // .desc{
+    //     // border: whitesmoke dotted 2px;
+    //   border: black 2px solid;
+    //   overflow: scroll;
+    //   height: 40px;
+    //   background-color:white;
+    //   color: black;
          
-    }
+    // }
     .name{
         font-family: 'Fjalla One', sans-serif;
         padding:  1px 1px ;
@@ -94,90 +97,90 @@
     }
  
 }
-@media (min-width: 400px){
-    .page-container{
-        margin: 1vh 1vh 1vh 5vh;
-        display: flex;
-        width: 100%;
-        height: 60%;
-        // font-size: 12px;
-        justify-items: center;
-        color: black;
-        background-color: transparent;
-        // border: black 5px dotted;
-        // border: solid teal 10px;
-    }
+// @media (min-width: 400px){
+//     .page-container{
+//         margin: 1vh 1vh 1vh 5vh;
+//         display: flex;
+//         width: 100%;
+//         height: 60%;
+//         // font-size: 12px;
+//         justify-items: center;
+//         color: black;
+//         background-color: transparent;
+//         // border: black 5px dotted;
+//         // border: solid teal 10px;
+//     }
     
     
     
-    .Projects-body{
+//     .Projects-body{
         
-        list-style-type: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        margin: 5px 5px 5px 5px;
-        align-content: center;
-       grid-row-end: auto;
+//         list-style-type: none;
+//         display: flex;
+//         flex-flow: row wrap;
+//         justify-content: space-around;
+//         margin: 5px 5px 5px 5px;
+//         align-content: center;
+//        grid-row-end: auto;
         
     
-        .Projects{
-        width: fit-content;
-        height: auto;
-        justify-content: space-between;
-        flex: 1;
-        // border: 9px dotted teal;
-        margin: 1vh 1vh 1vh 5vh;
-        padding: 2px 1px 2px 1px;
-        &:first-child { margin-left: 0; }
-        &:last-child { margin-right: 0; } 
-        // align-items: center;
-        }
-        .imgProject{
-            height: 205px;
-            width: 255px;
-            border: aquamarine 3px solid;
-            padding: 4vh 4vh 4vh 4vh ;
+//         .Projects{
+//         width: fit-content;
+//         height: auto;
+//         justify-content: space-between;
+//         flex: 1;
+//         // border: 9px dotted teal;
+//         margin: 1vh 1vh 1vh 5vh;
+//         padding: 2px 1px 2px 1px;
+//         &:first-child { margin-left: 0; }
+//         &:last-child { margin-right: 0; } 
+//         // align-items: center;
+//         }
+//         .imgProject{
+//             height: 205px;
+//             width: 255px;
+//             border: aquamarine 3px solid;
+//             padding: 4vh 4vh 4vh 4vh ;
           
 
         
-        }
-        // img:hover{
-        //     transform: scale(1.5);
-        //     box-shadow: 0 0 30px red;
-        // }
-        .desc{
-            // border: whitesmoke dotted 2px;
-          border: black 2px solid;
-          overflow: scroll;
-          height: 40px;
-          background-color:white;
-          color: black;
+//         }
+//         // img:hover{
+//         //     transform: scale(1.5);
+//         //     box-shadow: 0 0 30px red;
+//         // }
+//         .desc{
+//             // border: whitesmoke dotted 2px;
+//           border: black 2px solid;
+//           overflow: scroll;
+//           height: 40px;
+//           background-color:white;
+//           color: black;
              
-        }
-        .name{
-            font-family: 'Fjalla One', sans-serif;
-            padding:  1px 1px ;
-            color: white;
-        }
-        a{
-            color: black;
+//         }
+//         .name{
+//             font-family: 'Fjalla One', sans-serif;
+//             padding:  1px 1px ;
+//             color: white;
+//         }
+//         a{
+//             color: black;
             
            
-        }
-        .space{
-           border: inset 3px black;
-            align-content:inherit;
-            // margin: 2px 2px 2px 2px;
-            padding: 1.5vh 1.5vh 1.5vh 1.5vh;
-            list-style-type: none;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            // margin: 2px 2px 5px 5px;
-            align-content: center;
-            grid-row-end: auto;
-        }
+//         }
+//         .space{
+//            border: inset 3px black;
+//             align-content:inherit;
+//             // margin: 2px 2px 2px 2px;
+//             padding: 1.5vh 1.5vh 1.5vh 1.5vh;
+//             list-style-type: none;
+//             display: flex;
+//             flex-flow: row wrap;
+//             justify-content: center;
+//             // margin: 2px 2px 5px 5px;
+//             align-content: center;
+//             grid-row-end: auto;
+//         }
      
-    }
-}
+//     }
+// }
