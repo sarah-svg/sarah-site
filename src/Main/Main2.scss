@@ -1,167 +1,216 @@
 .Main{
-    color: aquamarine;
-    display: flex;
-   //  height: 100vh;
-    width: 100vw;
-    overflow: scroll;
-    flex-direction: row;
-    min-width: -webkit-fill-available;
-    max-width: -webkit-fill-available;
-   @mixin dots($count) {
-     $text-shadow: ();
-     @for $i from 0 through $count {
-       $text-shadow: $text-shadow,
-                    (-.5+(random()) * 3) + em
-                    (-.5+(random()) * 3) + em
-                    7px
-                    hsla(random() * 360, 100%, 50%,.9);
-     }
-     text-shadow: $text-shadow;
-   }
+  font-family: 'Montserrat', sans-serif;
+  
+  color: white;
+  border-top: black 15px dotted;
+  border-left: black 15px dotted;
+  border-right: black 15px dotted;
+  border-bottom: black solid 3px;
+  //////@at-root
+  background: #F007BA;
+  background: #F007BA;
+  background: -moz-linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
+  background: -webkit-linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
+  background: linear-gradient(45deg, #F007BA 0%, #08FFE3 56%, #000000 100%);
+
+
+  .name{
+    font-size: 70px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .Main{
+//     color: aquamarine;
+//     display: flex;
+//    //  height: 100vh;
+//     width: 100vw;
+//     overflow: scroll;
+//     flex-direction: row;
+//     min-width: -webkit-fill-available;
+//     max-width: -webkit-fill-available;
+//    @mixin dots($count) {
+//      $text-shadow: ();
+//      @for $i from 0 through $count {
+//        $text-shadow: $text-shadow,
+//                     (-.5+(random()) * 3) + em
+//                     (-.5+(random()) * 3) + em
+//                     7px
+//                     hsla(random() * 360, 100%, 50%,.9);
+//      }
+//      text-shadow: $text-shadow;
+//    }
    
-   .shine {
-     font: 5vmin/1.3 Serif;
-     // overflow: hidden;
-     background: #123;
+//    .shine {
+//      font: 5vmin/1.3 Serif;
+//      // overflow: hidden;
+//      background: #123;
      
-   }
+//    }
    
    
    
    
-   .shine, .Main {
-     display: block;
-     font-size: 52px;
-     min-width: -webkit-fill-available;
-     max-width: -webkit-fill-available;
-   }
+//    .shine, .Main {
+//      display: block;
+//      font-size: 52px;
+//      min-width: -webkit-fill-available;
+//      max-width: -webkit-fill-available;
+//    }
    
-   .Main::before, .Main::after,
-   .shine::before, .shine::after {
-     position: fixed;
-     top: 50%;
-     left: 50%;
-     width: 3em;
-     height: 3em;
-     content: '.';
-     mix-blend-mode: screen;
-     animation: 44s -27s move infinite ease-in-out alternate;
-   }
-   
-   
-   .shine::before {
-     @include dots(40);
-     animation-duration: 44s;
-     animation-delay: -27s;
-   }
-   
-   .shine::after {
-     @include dots(40);
-     animation-duration: 43s;
-     animation-delay: -32s;
-   }
-   
-   .Main::before {
-     @include dots(40);
-     animation-duration: 42s;
-     animation-delay: -23s;
-   }
-   
-   .Main::after {
-     @include dots(40);
-     animation-duration: 41s;
-     animation-delay: -19s;
-   }
+//    .Main::before, .Main::after,
+//    .shine::before, .shine::after {
+//      position: fixed;
+//      top: 50%;
+//      left: 50%;
+//      width: 3em;
+//      height: 3em;
+//      content: '.';
+//      mix-blend-mode: screen;
+//      animation: 44s -27s move infinite ease-in-out alternate;
+//    }
    
    
-   @keyframes move {
-     from {
-       transform: rotate(0deg) scale(12) translateX(-20px);
-     }
-     to {
-       transform: rotate(360deg) scale(18) translateX(20px);
-     }
-   }
-   }
+//    .shine::before {
+//      @include dots(40);
+//      animation-duration: 44s;
+//      animation-delay: -27s;
+//    }
    
-   @media(min-width: 400px) {
-     .Main{
-     color: aquamarine;
-     display: flex;
-     // height: 100vh;
-     // width: 100vw;
+//    .shine::after {
+//      @include dots(40);
+//      animation-duration: 43s;
+//      animation-delay: -32s;
+//    }
+   
+//    .Main::before {
+//      @include dots(40);
+//      animation-duration: 42s;
+//      animation-delay: -23s;
+//    }
+   
+//    .Main::after {
+//      @include dots(40);
+//      animation-duration: 41s;
+//      animation-delay: -19s;
+//    }
+   
+   
+//    @keyframes move {
+//      from {
+//        transform: rotate(0deg) scale(12) translateX(-20px);
+//      }
+//      to {
+//        transform: rotate(360deg) scale(18) translateX(20px);
+//      }
+//    }
+//    }
+   
+//    @media(min-width: 400px) {
+//      .Main{
+//      color: aquamarine;
+//      display: flex;
+//      // height: 100vh;
+//      // width: 100vw;
     
      
-    @mixin dots($count) {
-      $text-shadow: ();
-      @for $i from 0 through $count {
-        $text-shadow: $text-shadow,
-                     (-.5+(random()) * 3) + em
-                     (-.5+(random()) * 3) + em
-                     7px
-                     hsla(random() * 360, 100%, 50%,.9);
-      }
-      text-shadow: $text-shadow;
-    }
+//     @mixin dots($count) {
+//       $text-shadow: ();
+//       @for $i from 0 through $count {
+//         $text-shadow: $text-shadow,
+//                      (-.5+(random()) * 3) + em
+//                      (-.5+(random()) * 3) + em
+//                      7px
+//                      hsla(random() * 360, 100%, 50%,.9);
+//       }
+//       text-shadow: $text-shadow;
+//     }
     
-    .shine {
-      font: 5vmin/1.3 Serif;
-      overflow: hidden;
-      background: #123;
-    }
+//     .shine {
+//       font: 5vmin/1.3 Serif;
+//       overflow: hidden;
+//       background: #123;
+//     }
     
-    .shine, .Main {
-      display: block;
-      font-size: 32px;
+//     .shine, .Main {
+//       display: block;
+//       font-size: 32px;
      
-    }
+//     }
     
-    .Main::before, .Main::after,
-    .shine::before, .shine::after {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      width: 3em;
-      height: 3em;
-      content: '.';
-      mix-blend-mode: screen;
-      animation: 44s -27s move infinite ease-in-out alternate;
-    }
-    
-    
-    .shine::before {
-      @include dots(40);
-      animation-duration: 44s;
-      animation-delay: -27s;
-    }
-    
-    .shine::after {
-      @include dots(40);
-      animation-duration: 43s;
-      animation-delay: -32s;
-    }
-    
-    .Main::before {
-      @include dots(40);
-      animation-duration: 42s;
-      animation-delay: -23s;
-    }
-    
-    .Main::after {
-      @include dots(40);
-      animation-duration: 41s;
-      animation-delay: -19s;
-    }
+//     .Main::before, .Main::after,
+//     .shine::before, .shine::after {
+//       position: fixed;
+//       top: 50%;
+//       left: 50%;
+//       width: 3em;
+//       height: 3em;
+//       content: '.';
+//       mix-blend-mode: screen;
+//       animation: 44s -27s move infinite ease-in-out alternate;
+//     }
     
     
-    @keyframes move {
-      from {
-        transform: rotate(0deg) scale(12) translateX(-20px);
-      }
-      to {
-        transform: rotate(360deg) scale(18) translateX(20px);
-      }
-    }
+//     .shine::before {
+//       @include dots(40);
+//       animation-duration: 44s;
+//       animation-delay: -27s;
+//     }
+    
+//     .shine::after {
+//       @include dots(40);
+//       animation-duration: 43s;
+//       animation-delay: -32s;
+//     }
+    
+//     .Main::before {
+//       @include dots(40);
+//       animation-duration: 42s;
+//       animation-delay: -23s;
+//     }
+    
+//     .Main::after {
+//       @include dots(40);
+//       animation-duration: 41s;
+//       animation-delay: -19s;
+//     }
+    
+    
+//     @keyframes move {
+//       from {
+//         transform: rotate(0deg) scale(12) translateX(-20px);
+//       }
+//       to {
+//         transform: rotate(360deg) scale(18) translateX(20px);
+//       }
+//     }
      
-     }
-   }
+//      }
+//    }

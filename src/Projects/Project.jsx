@@ -22,7 +22,7 @@ export const Project = ({ close, name, demo, repo, site, desc }) => {
         className="close"
         file="none"
         stroke="currentColor"
-        viewBox= " 0 0 24 24"
+        viewBox= " 0 0 0 0"
         xmlns="http://www.w3.org/2000/svg"
         height = "1.5em"
         onClick={close}
@@ -36,7 +36,7 @@ export const Project = ({ close, name, demo, repo, site, desc }) => {
 
       <h2 className="name">{name}</h2>
       <img src={demo} alt={name}height="250vh" className="imgae"/>
-      <div className="technologies">technologies.................</div>
+      {/* <div className="technologies">technologies.................</div> */}
       <div className="description">{desc}</div>
       <section className="detailsFooter">
         {site &&
