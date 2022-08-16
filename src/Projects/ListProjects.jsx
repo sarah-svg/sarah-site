@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { projectsData } from './data';
 import { Project } from './Project';
 import uuid from 'react-uuid';
