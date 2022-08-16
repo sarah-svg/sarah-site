@@ -1,15 +1,9 @@
 import React from 'react';
-
 import './Main.scss';
-const lang = ['React', 'Node', 'Express', 'SCSS', 'JavaScript'];
 
 
 
 function Frameworks() {
-  const mapped = lang.map((index) => {
-    return <li id="carousel" key={index}><span>-</span>{index}-</li>;
-  });
-
   return (
     <div class="container">
       <div class="card">

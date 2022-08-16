@@ -1,6 +1,4 @@
 
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 import './Main.scss';
 import About from '../About/About';
 import Frameworks from './framworks';
