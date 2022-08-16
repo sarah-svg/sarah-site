@@ -1,10 +1,7 @@
 
-import { Link } from 'react-scroll';
-
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import Frameworks from './framworks';
-import './Main.scss';
+// import './Main.scss';
 import About from '../About/About';
 
 
@@ -21,13 +18,11 @@ function Main() {
                 <div className="typewriter">
                   <h1 className="name">Sarah Skillen</h1>
                 </div>
-                <Frameworks/>
+                
               </div> 
             </div>
             <div className="arrow">
-              <Link activeClass="active" to="about" smooth={true} >
-                <img src="./arrow.png" alt="down arrow" />
-              </Link>
+          
             </div>
           </div>
           <About />   

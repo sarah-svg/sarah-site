@@ -1,41 +1,39 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-
-import { NavLink } from 'react-router-dom';
 import './Header.scss';
 
 export default function Header() {
   return (
-    <div className='Header' id='Header'>
+    <div className='d-flex w-100 justify-content-end' id='Header'>
       <div className='logo'>  
 
       </div>
 
-      <span className='nav'>
-        <Link activeClass="active" 
-          to="home" 
+      <nav className='nav d-flex justify-content-end'>
+        <Link
+          to="/home" 
           smooth={true}
           className="nav-link"></Link>
-        <Link activeClass="active" 
-          to="about" 
+        <Link 
+          to="/about" 
           smooth={true}
           className="nav-link">CONTACT</Link>   
         {/* <Link activeClass="active" 
           to="footer" 
           smooth={true}
           className="nav-link">Contact</Link> */}
-        <NavLink 
-          activeClassName="active"
+        <Link 
+          
           to="/page" 
           smooth={true}
-          className="nav-link">PROJECTS</NavLink>
+          className="nav-link">PROJECTS</Link>
      
    
-        <a className="a" href="./resume2.pdf">RESUME
+        <a className="nav-link" href="./resume2.pdf">RESUME
         </a>
         
    
-      </span>
+      </nav>
     </div>
   );
 }

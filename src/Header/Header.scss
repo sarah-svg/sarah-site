@@ -1,82 +1,18 @@
-.Header {
-    height: 40px;
-    padding: 10px 10px;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-       width: 100vw;
-  
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    font-size: 30px;
-    z-index: 1;
-    align-content: center;
-    img title {
-        width: 24px;
-    
-
-	margin: 9px;
-	padding: 3px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
-    }
-
-    .logo {
-        img {
-             
-       
-            height: 40px;
-            cursor: pointer;
+@import '~bootstrap/scss/bootstrap.scss';
+#Header{
+    border: teal .16rem solid;
+    background-color: teal;
+    align-items: flex-end;
+    .nav-link{
+        color: black;
+        :active{
+            color: #FFFFFF;
+            background: #232323;
+            text-shadow: 0 0 5px #FFF,
+             0 0 10px #FFF, 0 0 15px #FFF, 
+             0 0 20px #49ff18, 0 0 30px #49FF18,
+              0 0 40px #49FF18, 0 0 55px #49FF18,
+               0 0 75px #49ff18;
         }
-    }
-     flex-flow: row ;
-    .nav {
-        display: flex;
-        align-items: right;
-        position: relative;
-        right: 60px;
-        transition: all 4s ease-in-out; 
-
-
-
-    }
-
-    .a, .nav-link, Link {
-        text-decoration: none;
-        color: aquamarine;
-        align-items: left;
-        margin: 2px 4px 4px 2px;
-        padding: 2px 2px 2px 2px;
-    }
-    
-    .a:hover, .nav-link:hover {
-        
-        cursor: pointer;
-        transform: scale(1.25); 
-    }
-    
-}
-
-@media (max-width: 992px) {
-    .Header {
-        width: 100vw;
-        font-size: 18px;
-
-        .nav {
-            right: 10px;
-        }
-    }
-}
-  
-@media (max-width: 600px) {
-    .Header {
-        width: 100vw;
-        font-size: 14px;
-        padding: 5px 5px;
-        
-    }
-    .a{
-        color:aquamarine;
     }
 }
