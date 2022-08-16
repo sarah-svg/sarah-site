@@ -1,16 +1,17 @@
 
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-// import './Main.scss';
+import './Main.scss';
 import About from '../About/About';
+import Frameworks from './framworks';
 
 
 function Main() {
   return (
-    <div>
+    <div className='d-flex h-100 w-100 flex-grow-0'>
       <div className="Main">
-        <div className="shine">
-          <Header />
+        <div className="shine gradient-background">
+      
           <p></p>
           <div className="Landing" name="home">
             <div className="landing-group">
@@ -18,7 +19,7 @@ function Main() {
                 <div className="typewriter">
                   <h1 className="name">Sarah Skillen</h1>
                 </div>
-                
+         
               </div> 
             </div>
             <div className="arrow">
@@ -26,10 +27,10 @@ function Main() {
             </div>
           </div>
           <About />   
-          <Footer/>
+          <Frameworks/> 
         </div>
+   
       </div>
-      <p className='P'> Created by Sarah Skillen &#169; 2021 </p> 
     </div>
   );
 }

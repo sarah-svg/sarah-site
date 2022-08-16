@@ -5,10 +5,11 @@ import Contact from '../Contact/Contact';
 import './Footer.scss';
 export default function Footer() {
   return (
-    <div className="footer">
-      {/* <div className="footer"> 
-        <p> Created by Sarah Skillen &#169; 2021 </p> */}
-      <Contact/>
+   
+    <div> 
+
+      <Contact />
+      <div className='d-flex justify-content-center footer'>Created by Sarah Skillen &#169; 2022</div>
     </div> 
 
   );

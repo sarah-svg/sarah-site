@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './2.scss';
+import './Projects.scss';
 
 
 
@@ -16,36 +16,16 @@ export const Project = ({ close, name, demo, repo, site, desc }) => {
   };
 
   return (
-    <div className="contain">
-     
-      <svg 
-        className="close"
-        file="none"
-        stroke="currentColor"
-        viewBox= " 0 0 0 0"
-        xmlns="http://www.w3.org/2000/svg"
-        height = "1.5em"
-        onClick={close}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin={2}
-          d="M6 18L18 6M6 6l12 12"
-        />
-      </svg>
-
+    <div className="card">
       <h2 className="name">{name}</h2>
-      <img src={demo} alt={name}height="250vh" className="image"/>
-      {/* <div className="technologies">technologies.................</div> */}
+      <img src={demo} alt={name} className="image"/>
       <span className="description">{desc}</span>
       <section className="detailsFooter">
-      
         <>
           <button 
             className="link"
             onClick={handleSite}>Deployed
-            {/* <img src="./git.png" alt="icon link to Sarah's github" height="2px"/> */}
-            
+            {/* <img src="./git.png" alt="icon link to Sarah's github" height="2px"/> */}   
           </button>
           <span>&nbsp; | &nbsp;</span>
         </>

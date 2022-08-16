@@ -1,18 +1,22 @@
 @import '~bootstrap/scss/bootstrap.scss';
 #Header{
-    border: teal .16rem solid;
-    background-color: teal;
+
+    background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e);
+    background-size: 240% 240%;
+    border-bottom:linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e) .15rem solid;
+    animation: gradient-animation 12s ease infinite;
     align-items: flex-end;
-    .nav-link{
+    a{
+        font-size: 1rem !important;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+      }
+    .nav-link, a{
         color: black;
+        border-bottom: none;
+        font-size: 1rem !important;
         :active{
-            color: #FFFFFF;
-            background: #232323;
-            text-shadow: 0 0 5px #FFF,
-             0 0 10px #FFF, 0 0 15px #FFF, 
-             0 0 20px #49ff18, 0 0 30px #49FF18,
-              0 0 40px #49FF18, 0 0 55px #49FF18,
-               0 0 75px #49ff18;
+            color: aqua;
+            font-size: 1rem !important;
         }
     }
 }

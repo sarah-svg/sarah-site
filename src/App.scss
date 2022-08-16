@@ -1,6 +1,14 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .back{
-  background-color: black;
+  height: 100%;
+  width: 100%;
+    background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e);
+    background-size: 240% 240%;
+    animation: gradient-animation 12s ease infinite;
 }
 
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+
+import { NavLink } from 'react-router-dom';
 import './Header.scss';
 
 export default function Header() {
@@ -9,31 +11,18 @@ export default function Header() {
 
       </div>
 
-      <nav className='nav d-flex justify-content-end'>
-        <Link
-          to="/home" 
-          smooth={true}
-          className="nav-link"></Link>
-        <Link 
-          to="/about" 
-          smooth={true}
-          className="nav-link">CONTACT</Link>   
-        {/* <Link activeClass="active" 
-          to="footer" 
-          smooth={true}
-          className="nav-link">Contact</Link> */}
-        <Link 
-          
-          to="/page" 
-          smooth={true}
-          className="nav-link">PROJECTS</Link>
-     
-   
-        <a className="nav-link" href="./resume2.pdf">RESUME
+      <div className='nav d-flex justify-content-end'>
+        <NavLink
+          to="/" 
+          className="nav-link">Home</NavLink>  
+        <NavLink
+          to='/page'
+          className="nav-link">Project</NavLink> 
+        <a className=" a nav-link" href="./resume2.pdf">Resume
         </a>
         
    
-      </nav>
+      </div>
     </div>
   );
 }
