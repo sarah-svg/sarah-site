@@ -18,7 +18,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="Contact C" name="contact">
+      <div className="d-flex contact" name="contact">
         <div className="column">
           {/* <a href="mailto: kjskillen@gmail.com" > */}
           <button onClick={handleEmail}>

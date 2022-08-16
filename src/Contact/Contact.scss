@@ -1,60 +1,16 @@
-.Contact{
-	display: flex;
+.contact{
+	width: 100% !important;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 10px 0;
-	//background-color: rgb(23, 42, 58);
-	
-    border: 1px dotted teal;
-}
-
-.column {
-    // width: 20px;
-	flex: 1;
-	//background-color: rgb(23, 42, 58);
-	
-	// border: 1px dotted teal;
-	margin: 2px;
-	padding: 1px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
-
-    .imgHeader{
-        width: 35px;
-    }
-	
-
-@media(min-width: 600px){
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 10px 0;
-	//background-color: rgb(23, 42, 58);
-	
-    // border: 1px dotted teal;
-}
-}
-.column {
-    width: 20px;
-	flex: 1;
-	//background-color: rgb(23, 42, 58);
-	
-	// border: 1px dotted teal;
-	margin: 2px;
-	padding: 1px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
-
-  	
-}
-
-// .P{
-	
-// }
-.button{
+	margin: 1rem;
+	height: 3rem;
 	background-color: black;
+	justify-content: space-around;
+	//background-color: rgb(23, 42, 58);
+	.imgHeader{
+		height: 1.5rem !important;
+		
+		background-color: black;
+	}
 }
-// img{
-// 	border: 1px;
-// 	box-shadow: turquoise;
-// }
+
