@@ -57,7 +57,7 @@ function Frameworks() {
             <circle class="stroke" cx="60" cy="60" r="50"/>
           </svg>
         </div> */}
-      </div> */}
+      </div> 
       <div class="card">
         <h3 class="title">CSS</h3>
         <div class="bar">
