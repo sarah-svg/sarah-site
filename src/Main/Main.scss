@@ -21,6 +21,10 @@
   }
   
 }
+img{
+ width: 28px;
+ height: 28px;
+}
 .lang{
   font-size: .5rem !important;
 }
@@ -91,47 +95,49 @@
 
 .react{
   position: absolute;
-  bottom: 40px;
-  left: 55px;
+  bottom: 30px;
+  left: 73px;
   width:50px;
 }
 .javascript{
   position: absolute;
-  bottom: 40px;
-  left: 40px;
+  bottom: 30px;
+  left: 105px;
   width:50px;
 }
 .node{
   position: absolute;
-  bottom: 40px;
-  left: 40px;
+  bottom: 30px;
+  left: 65px;
   width:50px;
 }
 .css{
   position: absolute;
-  bottom: 40px;
-  left: 40px;
+  bottom: 30px;
+  left: 60px;
   width:50px;
 }
 .scss{
   position: absolute;
-  bottom: 40px;
-  left: 40px;
+  bottom: 30px;
+  left: 76px;
   width:50px;
 }
 }
 
 .card {
   display: flex;
-  height: 280px;
+  height: 380px;
   width: 200px;
-  background-color:black;
+
+  background-color:black !important;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
 /*   margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
+  margin-left: 3px;
 }
 
 .card:not(:first-child) {
@@ -301,6 +307,7 @@ svg {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
+    background-color: black;
   }
   
   .card {
