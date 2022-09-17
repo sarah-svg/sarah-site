@@ -60,7 +60,7 @@ body{
   background-size: cover;
   background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e) !important;
   background-size: 240% 240%;
-  background: repeat;
+  background: no-repeat;
   animation: gradient-animation 12s ease infinite;
 }
 @keyframes gradient-animation {
