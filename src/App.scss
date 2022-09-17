@@ -62,7 +62,7 @@
     max-height: 100%;
     background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e) !important;
     background-size: 240% 240%;
-    background: no-repeat;
+    background: repeat;
     animation: gradient-animation 12s ease infinite;
   }
   @keyframes gradient-animation {
