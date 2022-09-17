@@ -17,7 +17,7 @@ export default function Header() {
         <NavLink
           to='/page'
           className="nav-link">Project</NavLink> 
-        <a className=" a nav-link" href="./resume2.pdf">Resume
+        <a className=" a nav-link" href="./resume.pdf">Resume
         </a>
         
    
