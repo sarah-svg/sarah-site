@@ -5,23 +5,23 @@ import './Main.scss';
 
 function Frameworks() {
   return (
-    <div class="container">
-      <div class="card d-flex justify-content-center">
+    <ul class="container">
+      <li class="card d-flex  w-100">
         <img src='./react.svg' alt='react' className='react' />
-      </div>
-      <div class="card d-flex justify-content-center">
+      </li>
+      <li class="card d-flex  w-100">
         <img src='./javascript.svg' alt='javascript' className='javascript' />
-      </div>
-      <div class="card d-flex justify-content-center">
+      </li>
+      <li class="card d-flex  w-100">
         <img src='./node.svg' alt='node' className='node' />
-      </div> 
-      <div class="card d-flex justify-content-center">
+      </li> 
+      <li class="card d-flex  w-100">
         <img src='./css.svg' alt='css' className='css' />
-      </div>
-      <div class="card d-flex justify-content-center">
+      </li>
+      <li class="card d-flex  w-100">
         <img src='./sass.svg' alt='scss' className='scss' />
-      </div>
-    </div>
+      </li>
+    </ul>
   );
 }
 
