@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rampart+One&family=Shadows+Into+Light&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import '~bootstrap/scss/bootstrap.scss';
 #projects{
 
   .card{
@@ -30,7 +31,7 @@
 
     }
 }
-@import '~bootstrap/scss/bootstrap.scss';
+
 #headerr{
   font-weight: bolder;
      display: flex;
@@ -41,7 +42,9 @@
       margin: .6rem;
         font-size: 1rem !important;
         text-decoration: none;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+        font-weight: bolder;
+        font-size: 1rem !important;
+        font-family: 'Hubballi' !important;
       }
     .nav-link, a{
         color: black;

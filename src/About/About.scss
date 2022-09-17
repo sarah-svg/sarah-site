@@ -1,10 +1,15 @@
 //looks good
 .About {
-
+  
         padding-top: 3rem;
         padding: 1.5rem;
-        height: 60%;
+        height: 70vh;
+.job{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: teal 0px 0px 2px, teal 0px 0px 10px, teal 0px 0px 5px, aquamarine 0px 0px 10px, aquamarine 0px 0px 15px;
 
+}
     @keyframes bounce {
 
         0%,
@@ -83,6 +88,12 @@
         font-size: 30px;
         padding: 1rem !important;
         // text-overflow: ellipsis;
+    }
+    .job{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-shadow: -5px 3px 8px rgba(5,212,230,0.87);
+    
     }
 }
 //looks good
