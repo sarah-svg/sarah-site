@@ -6,6 +6,7 @@ import {
 import ListProjects from '../Projects/ListProjects.jsx';
 import '../App.scss';
 import Main from '../Main/Main.js';
+import Footer from '../Footer/Footer.jsx';
 
 
   
@@ -22,7 +23,7 @@ function Home() {
           <Route exact path='/page' component={ListProjects}/>
         </Switch>
       </Router> 
-    
+      <Footer/>
     </div>
   );
 }

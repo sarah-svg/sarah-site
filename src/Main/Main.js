@@ -17,7 +17,6 @@ function Main() {
           <About />     
         </div>    
       </div>
-      <Footer/>
     </div>
   );
 }
