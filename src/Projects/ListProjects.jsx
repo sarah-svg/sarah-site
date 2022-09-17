@@ -3,7 +3,7 @@ import { projectsData } from './data';
 import { Project } from './Project';
 import uuid from 'react-uuid';
 import './Projects.scss';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter, NavLink } from 'react-router-dom';
 
 
 function ListProjects() {
@@ -22,7 +22,7 @@ function ListProjects() {
   
   return (
     <div id='projects' className="container d-block">
-      <div id='headerr'><Link to='/'>Home</Link></div>
+      <div className='nav d-flex justify-content-end' id='headerr'><NavLink to='/'>Home</NavLink></div>
     
       {portfolioList} 
     </div>

@@ -1,12 +1,14 @@
 @import '~bootstrap/scss/bootstrap.scss';
 #Header{
-
-    background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e);
-    background-size: 240% 240%;
-    border-bottom:linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e) .15rem solid;
-    animation: gradient-animation 12s ease infinite;
+    margin-left: .5rem;
+    margin-right: .65rem;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: .25rem solid black;   
     align-items: flex-end;
+    width: 95%;
     a{
+        font-weight: bolder;
         font-size: 1rem !important;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
       }

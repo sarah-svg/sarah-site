@@ -19,7 +19,7 @@ export const Project = ({ close, name, demo, repo, site, desc }) => {
     <div className="card ">
       <h2 className="name">{name}</h2>
       <img src={demo} alt={name} className="image"/>
-      <span className="description">{desc}</span>
+      <p className="description">{desc}</p>
       <section className="detailsFooter">
         <>
           <button 
