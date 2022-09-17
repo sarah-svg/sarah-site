@@ -22,7 +22,8 @@ function ListProjects() {
   
   return (
     <div id='projects' className="container d-block">
-      <Link to='/'>Home</Link>
+      <div id='headerr'><Link to='/'>Home</Link></div>
+    
       {portfolioList} 
     </div>
   );

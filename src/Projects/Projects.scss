@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rampart+One&family=Shadows+Into+Light&display=swap');
 
 #projects{
+
   .card{
  margin-top: 4rem ;
   }
@@ -27,5 +28,30 @@
        }
     
 
+    }
+}
+@import '~bootstrap/scss/bootstrap.scss';
+#headerr{
+  width: 100%;
+  
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e);
+    background-size: 240% 240%;
+    border-bottom:linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e) .15rem solid;
+    animation: gradient-animation 12s ease infinite;
+    align-items: flex-end;
+    a{
+        font-size: 1rem !important;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+      }
+    .nav-link, a{
+        color: black;
+        border-bottom: none;
+        font-size: 1rem !important;
+        :active{
+            color: aqua;
+            font-size: 1rem !important;
+        }
     }
 }
