@@ -17,8 +17,11 @@ export const Project = ({ close, name, demo, repo, site, desc }) => {
 
   return (
     <div className="card ">
-      <h2 className="name">{name}</h2>
-      <img src={demo} alt={name} className="image"/>
+      <div className='d-flex justify-content-between'> 
+        <h2 style={{ fontWeight: 'bolder' }} className="name">{name}</h2>
+        <img src={demo} alt={name} className="image"/>
+      </div>
+  
       <p className="description">{desc}</p>
       <section className="detailsFooter">
         <>
