@@ -3,21 +3,26 @@ import { projectsData } from './data';
 import { Project } from './Project';
 import uuid from 'react-uuid';
 import './Projects.scss';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 
 function ListProjects() {
 
   const portfolioList = projectsData.map(project => {
     return (
-      <div key={uuid()} >
-        <Project className='card' {...project} />
-      </div>
+      <>
+     
+        <div key={uuid()} >
+          <Project className='card' {...project} />
+        </div>
+      </>
+    
     );
   });
   
   return (
-    <div id='projects'className="container h-100 justify-content-center">
+    <div id='projects' className="container d-block">
+      <Link to='/'>Home</Link>
       {portfolioList} 
     </div>
   );

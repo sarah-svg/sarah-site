@@ -16,7 +16,7 @@ export const Project = ({ close, name, demo, repo, site, desc }) => {
   };
 
   return (
-    <div className="card">
+    <div className="card ">
       <h2 className="name">{name}</h2>
       <img src={demo} alt={name} className="image"/>
       <span className="description">{desc}</span>
@@ -34,9 +34,6 @@ export const Project = ({ close, name, demo, repo, site, desc }) => {
           className="link"
           onClick={handleRepo}>GitHub</button>
       </section>
-
-
-
     </div>
   );
 };
