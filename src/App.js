@@ -1,33 +1,24 @@
-import {
-  BrowserRouter as Router, 
-  Route, 
-  Switch
-} from 'react-router-dom';
+import React from 'react';
+import { useMediaQuery } from 'react-responsive';
+import Home from './Home/Home.js';
 
-import Main from './Main/Main.js';
-import ListProjects from './Projects/ListProjects.jsx';
-import './App.scss';
-import Footer from './Footer/Footer.jsx';
-import Header from './Header/Header.js';
-function App() {
+export default function App() {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  });
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' });
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' });
   return (
-    <div className="back">
-      <Router>
-        <Header />
-     
-        <Switch> 
-          <Route exact path='/'
-            render={(routerProps) => <Main
-              {...routerProps}/>} 
-          />  
-          <Route exact path='/page' component={ListProjects}/>
-        </Switch>
-      </Router> 
-
-      <Footer/>
+    <div className='body'>
+      {isDesktopOrLaptop && <Home/>}
+      {isTabletOrMobile && <Home />}
+      {isBigScreen && <Home />}
+      {isPortrait && <Home />}
+      {isRetina && <Home />}
     </div>
   );
 }
 
-export default App;
 //  <Footer/>

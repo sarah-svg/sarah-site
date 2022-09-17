@@ -1,58 +1,76 @@
 @import '~bootstrap/scss/bootstrap.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .Main{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+ul {
+  /* Use flex boxes to align li items */
+  display: flex;
+  justify-content: space-around;
+  /* Remove default padding from major browsers */
+  padding: 0;
+  /* Hide the default decorations for li items */
+  list-style: none;
+}
+ul > li {
+  /* Display the elements in one line */
+  display: inline-block;
+}
 
-  .gradient-background {
-    height: 100vh;
-    background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e);
-    background-size: 240% 240%;
-    animation: gradient-animation 12s ease infinite;
+  img{
+    position: relative;
+    margin-right: .54rem;
+  width: 28px;
+  height: 28px;
   }
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-}
-img{
- width: 28px;
- height: 28px;
-}
-.lang{
-  font-size: .5rem !important;
-}
-.typewriter{
-  margin-left: 2rem !important;
-}
-.typewriter h1 {
+ .lang{
+   font-size: 1.5rem !important;
+ }
+ .typewriter{
+ margin-left: 1.5rem !important;
+ }
+ .typewriter h1 {
  color: black;
-  overflow: hidden; 
-  border-right: .15em solid transparent; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(50, end),
-    blink-caret .75s step-end infinite;
-}
+   overflow: hidden; 
+   border-right: .15em solid transparent; /* The typwriter cursor */
+   white-space: nowrap; /* Keeps the content on a single line */
+   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   letter-spacing: .15em; /* Adjust as needed */
+   animation: 
+     typing 1.755s steps(20, end),
+     blink-caret .75s step-end infinite;
+ }
 /* The typing effect */
-@keyframes typing {
-  from { width: 20% }
-  to { width: 60% }
-}
+ @keyframes typing {
+   from { width: 0% }
+   to { width: 80% }
+ }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: transparent; }
-}
+ /* The typewriter cursor effect */
+ @keyframes blink-caret {
+   from, to { border-color: transparent }
+   50% { border-color: transparent; }
+ }
+  .container {
+  height: 30%;
+  width: 60%;
+  margin: 1rem;
+  justify-content: center;
+  left: calc(50% - 300px);
+  display: flex;
+  margin-left: 20% ;
+  }
 
 .lang{
   display: flex;
@@ -64,88 +82,24 @@ img{
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   justify-content: center;
   letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-    font-size: 55px ;
-    font-size: 3vh;
-}
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
 }
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: transparent; }
-}
-
-.container {
-  height: 10%;
-  width: 60%;
- 
-  justify-content: center;
-  left: calc(50% - 300px);
-  display: flex;
-  margin-left: 20% ;
-
-
-.react{
-  position: absolute;
-  bottom: 30px;
-  left: 73px;
-  width:50px;
-}
-.javascript{
-  position: absolute;
-  bottom: 30px;
-  left: 105px;
-  width:50px;
-}
-.node{
-  position: absolute;
-  bottom: 30px;
-  left: 65px;
-  width:50px;
-}
-.css{
-  position: absolute;
-  bottom: 30px;
-  left: 60px;
-  width:50px;
-}
-.scss{
-  position: absolute;
-  bottom: 30px;
-  left: 76px;
-  width:50px;
-}
-}
-
 .card {
+  padding: .9rem;
   display: flex;
-  height: 380px;
-  width: 200px;
-
   background-color:black !important;
   border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-/*   margin-left: -50px; */
+  box-shadow: -1rem 0 2rem #000;
   transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
   margin-left: 3px;
 }
 
 .card:not(:first-child) {
-    margin-left: -50px;
+    margin-left: 21px;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(10px);
   transition: 0.001s ease-out;
 }
 
@@ -155,179 +109,154 @@ img{
   transition: 10s ease-out;
 }
 
-.title {
-  color: white;
-  font-size: .75rem;
-  position: absolute;
-  left: 20%;
-  top: 25%;
-}
 
-.bar {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  height: 5px;
-  width: 75%;
-  max-width: 100% !important;
-}
-
-.emptybar {
-  background-color: #2e3033;
-  width: 60%;
-  height: 100%;
-}
-
-.filledbar {
-  position: absolute;
-  top: 0px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: rgb(0,154,217);
-  background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e 100%);
-  transition: 6s ease-out;
-}
-
-.card:hover .filledbar {
-  width: 120px;
-  transition: 0.4s ease-out;
-}
-
-.circle {
-  position: absolute;
-  top: 150px;
-  left: calc(50% - 60px);
-}
-
-.stroke {
-  stroke: white;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  transition: 0.6s ease-out;
-}
-
-svg {
-  fill: #17141d;
-  stroke-width: 2px;
-}
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
-}
-@media only screen and (max-width: 300px) {
+@media screen and (orientation:portrait) and (min-device-width: 368px) and (max-device-width: 9003px) {
   .Main{
-
-    .gradient-background {
-      height: 100vh;
-      width: 100vh;
-      background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e);
-      background-size: 240% 240%;
-      animation: gradient-animation 12s ease infinite;
-    }
-    
-    @keyframes gradient-animation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-    
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
   }
+ img{
+ width: 20px;
+ height: 20px;
+ }
   .lang{
     font-size: .5rem !important;
   }
   .typewriter{
-    margin-left: 2rem !important;
+  margin-left: 1.75rem !important;
   }
   .typewriter h1 {
-   color: black;
+  color: black;
     overflow: hidden; 
     border-right: .15em solid transparent; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(50, end),
+      typing 1.755s steps(20, end),
       blink-caret .75s step-end infinite;
   }
-  /* The typing effect */
+/* The typing effect */
   @keyframes typing {
-    from { width: 20% }
-    to { width: 60% }
+    from { width: 0% }
+    to { width: 80% }
   }
-  
+
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: transparent; }
   }
-  
-  .lang{
-    display: flex;
-    flex-wrap: row;
-    list-style: none;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid transparent; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    justify-content: center;
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-      font-size: 55px ;
-      font-size: 3vh;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: transparent; }
-  }
-  
   .container {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 60%;
-    left: calc(50% - 300px);
-    display: flex;
-    flex-wrap: wrap;
+    height: 10%;
+    width: 100%;
+    // left: calc(50% - 300px);
     margin: 1rem;
-    background-color: black;
-  }
-  
-  .card {
     display: flex;
-    height: 41%;
-    background-color: #17141d;
-    border-radius: 10px;
-    box-shadow: -1rem 0 3rem #000;
-  /*   margin-left: -50px; */
-    transition: 0.4s ease-out;
+     }
+     .card {
+      width: 35px;
+
+      display: flex;
+      background-color:black !important;
+      border-radius: 10px;
+      box-shadow: -1rem 0 2rem #000;
+    // /*   margin-left: -50px; */
+      transition: 0.4s ease-out;
+    //   position: relative;
+    //   left: 0px;
+      margin-left: 3px;
+    }
+    
+    .card:not(:first-child) {
+        margin-left: 21px;
+    }
+    
+    .card:hover {
+      transform: translateY(10px);
+      transition: 0.001s ease-out;
+    }
+    
+    .card:hover ~ .card {
+      position: relative;
+      left: 30%;
+      transition: 10s ease-out;
+    }
+}
+@media screen and (orientation:landscape) and (min-device-width: 368px) and (max-device-width: 923px) {
+  .Main{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+    img{
+    width: 28px;
     position: relative;
-    left: 0px;
+    height: 28px;
+    }
+   .lang{
+     font-size: .5rem !important;
+   }
+   .typewriter{
+   margin-left: .95rem !important;
+   }
+   .typewriter h1 {
+   color: black;
+     overflow: hidden; 
+     border-right: .15em solid transparent; /* The typwriter cursor */
+     white-space: nowrap; /* Keeps the content on a single line */
+     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+     letter-spacing: .15em; /* Adjust as needed */
+     animation: 
+       typing 1.755s steps(20, end),
+       blink-caret .75s step-end infinite;
+   }
+ /* The typing effect */
+   @keyframes typing {
+     from { width: 0% }
+     to { width: 80% }
+   }
+ 
+   /* The typewriter cursor effect */
+   @keyframes blink-caret {
+     from, to { border-color: transparent }
+     50% { border-color: transparent; }
+   }
+   .container {
+  height: 10%;
+  width: 60%;
+  margin: 1rem;
+  justify-content: center;
+  left: calc(50% - 300px);
+  display: flex;
+  margin-left: 20% ;
+   }
+   .card {
+    padding: .9rem;
+    display: flex;
+    background-color:black !important;
+    border-radius: 10px;
+    box-shadow: -1rem 0 2rem #000;
+  // /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+  //   position: relative;
+  //   left: 0px;
+    margin-left: 3px;
   }
   
   .card:not(:first-child) {
-      margin-left: -50px;
+      margin-left: 21px;
   }
   
   .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(10px);
     transition: 0.001s ease-out;
   }
   
@@ -336,67 +265,5 @@ svg {
     left: 30%;
     transition: 10s ease-out;
   }
-  
-  .title {
-    color: white;
-    font-size: .5rem;
-    position: absolute;
-    left: 20%;
-    top: 11%;
-  }
-  
-  .bar {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    height: 5px;
-    width: 105%;
-    max-width: 100% !important;
-  }
-  
-  .emptybar {
-    background-color: #2e3033;
-    width: 60%;
-    height: 100%;
-  }
-  
-  .filledbar {
-    position: absolute;
-    top: 0px;
-    z-index: 3;
-    width: 0px;
-    height: 100%;
-    background: rgb(0,154,217);
-    background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e 100%);
-    transition: 6s ease-out;
-  }
-  
-  .card:hover .filledbar {
-    width: 120px;
-    transition: 0.4s ease-out;
-  }
-  
-  .circle {
-    position: absolute;
-    top: 150px;
-    left: calc(50% - 60px);
-  }
-  
-  .stroke {
-    stroke: white;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 360;
-    transition: 0.6s ease-out;
-  }
-  
-  svg {
-    fill: #17141d;
-    stroke-width: 2%;
+ }
 
-  }
-  
-  .card:hover .stroke {
-    stroke-dashoffset: 100;
-    transition: 0.6s ease-out;
-  }
-}
