@@ -23,8 +23,7 @@ function Main() {
             <div className="arrow">      
             </div>
           </div>
-          <About />   
-          <Frameworks/> 
+          <About />     
         </div>    
       </div>
       <Footer/>

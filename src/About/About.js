@@ -1,4 +1,5 @@
 import React from 'react';
+import Frameworks from '../Main/framworks';
 import './About.scss';
 
 export default function About() {
@@ -11,6 +12,7 @@ export default function About() {
         I have a amazing skill of talking and understanding my surroundings and making it creative and learning at the same time. Creative,
         transformative go getter and problem solver, vicarious team builder, hopeful, and a open collaborator.
       </div>
+      <Frameworks/>
     </div>
   );
 }
