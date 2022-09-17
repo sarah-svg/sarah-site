@@ -1,4 +1,6 @@
- body, html, #root {
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+body, html, #root {
   width: 100%;
   height: 100%; 
   max-width: 100%;
@@ -6,10 +8,8 @@
   margin: 0;
   box-sizing: border-box;
 
- 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Hubballi', cursive !important;
+  font-family: 'Hubballi', cursive , sans-serif, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } 
@@ -58,22 +58,23 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: linear-gradient(51deg,#64cfd6,#0c9ba4,#e64ebf,#96e64e) !important;
-  background-size: 240% 240%;
-  background: no-repeat;
-  animation: gradient-animation 12s ease infinite;
-}
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
+  background-repeat: no-repeat;
+    background: linear-gradient(254deg,#22d8ba,#a541e2,#41e267,#234bea,#da23ea,#23eaa4,#234bea,#23ea77,#8823ea);
+    background-size: 540% 540%;
+    animation: gradient-animation 54s ease infinite;
   }
-  50% {
-    background-position: 100% 50%;
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

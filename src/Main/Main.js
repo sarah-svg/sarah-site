@@ -13,7 +13,7 @@ function Main() {
       <Header/>
       <div className="Main">
         <div className="typewriter">
-          <h1 className="name">Sarah Skillen</h1>
+          <h1 className="name" style={{ fontWeight: 'bolder' } } >Sarah Skillen</h1>
           <About />     
         </div>    
       </div>
