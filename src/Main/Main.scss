@@ -100,13 +100,13 @@ ul > li {
 }
 
 .card:hover {
-  transform: translateY(5px);
+  transform: translateY(2px);
   transition: 0.0001s ease-out;
 }
 
 .card:hover ~ .card {
   position: relative;
-  left: 10%;
+  left: 5%;
   transition: 15s ease-out;
 }
 
@@ -178,14 +178,14 @@ ul > li {
   }
   
   .card:hover {
-    transform: translateY(5px);
+    transform: translateY(2px);
     transition: 0.0001s ease-out;
   }
   
   .card:hover ~ .card {
     position: relative;
-    left: 10%;
-    transition: 15s ease-out;
+    left: 5%;
+    transition: 20s ease-out;
   }
 }
 @media screen and (orientation:landscape) and (min-device-width: 368px) and (max-device-width: 923px) {
