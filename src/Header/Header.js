@@ -13,7 +13,7 @@ export default function Header() {
           className="nav-link">Home</NavLink>  
         <NavLink
           to='/page'
-          className="nav-link">Project</NavLink> 
+          className="nav-link">Projects</NavLink> 
         <a className=" a nav-link" href="./resume.pdf">Resume
         </a>
         
