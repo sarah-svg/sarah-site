@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 @import '~bootstrap/scss/bootstrap.scss';
 #projects{
-
   .card{
  margin-top: 4rem ;
   }
@@ -58,12 +57,29 @@ text-shadow: -2px 1px 5px rgba(5,212,230,0.87);
       width: 95%;
     a{  
       margin: .6rem;
-        font-size: 1rem !important;
+        font-size: 2rem !important;
         text-decoration: none;
         font-weight: bolder;
         color: black;
-        font-size: 1rem !important;
         font-family: 'Hubballi' !important;
       }
 
+}
+@media screen and (orientation:portrait) and (min-device-width: 368px) and (max-device-width: 9003px) {
+  #headerr{
+    font-weight: bolder;
+       display: flex;
+        justify-content: flex-end;
+        border-bottom: .25rem solid black;
+        width: 95%;
+      a{  
+        margin: .6rem;
+          font-size: 1rem !important;
+          text-decoration: none;
+          font-weight: bolder;
+          color: black;
+          font-family: 'Hubballi' !important;
+        }
+  
+  }
 }

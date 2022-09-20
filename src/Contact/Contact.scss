@@ -10,6 +10,7 @@
 	.imgHeader{
 		height: 1.5rem !important;
 		margin-top: .55rem;
+		width: 2rem;
 		background-color: black;
 	}
 	button{
@@ -19,3 +20,28 @@
 	}
 }
 
+@media screen and (orientation:portrait) and (min-device-width: 368px) and (max-device-width: 9003px) {
+
+	.contact{
+		width: 100% !important;
+		flex-flow: row wrap;
+		justify-content: center;
+		
+		height: 3rem;
+		background-color: black;
+		justify-content: space-around;
+		//background-color: rgb(23, 42, 58);
+		.imgHeader{
+			height: 1.5rem !important;
+			margin-top: .55rem;
+			width: 2rem;
+			background-color: black;
+		}
+		button{
+			background-color: black;
+		
+			border: none;
+		}
+	}
+
+}

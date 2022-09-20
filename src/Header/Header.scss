@@ -10,16 +10,46 @@
     width: 95%;
     a{
         font-weight: bolder;
-        font-size: 1rem !important;
+        font-size: 2rem !important;
         font-family: 'Hubballi' !important;
       }
     .nav-link, a{
         color: black;
         border-bottom: none;
-        font-size: 1rem !important;
-        :active{
+        font-size: 2rem !important;
+        :active :hover{
             color: aqua;
-            font-size: 1rem !important;
+            font-size: 2rem !important;
         }
     }
+}
+
+@media screen and (orientation:portrait) and (min-device-width: 368px) and (max-device-width: 9003px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+    #Header{
+        margin-left: .5rem;
+        margin-right: .65rem;
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: .25rem solid black;   
+        align-items: flex-end;
+        width: 95%;
+        a{
+            font-weight: bolder;
+            font-size: 1.50rem !important;
+            font-family: 'Hubballi' !important;
+          }
+        .nav-link, a{
+            color: black;
+            border-bottom: none;
+            font-size: 1.5rem !important;
+            :active :hover{
+                color: aqua;
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+
+
 }

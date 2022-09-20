@@ -100,14 +100,14 @@ ul > li {
 }
 
 .card:hover {
-  transform: translateY(10px);
-  transition: 0.001s ease-out;
+  transform: translateY(5px);
+  transition: 0.0001s ease-out;
 }
 
 .card:hover ~ .card {
   position: relative;
-  left: 30%;
-  transition: 10s ease-out;
+  left: 10%;
+  transition: 15s ease-out;
 }
 
 
@@ -173,21 +173,20 @@ ul > li {
     //   left: 0px;
       margin-left: 3px;
     }
-    
     .card:not(:first-child) {
-        margin-left: 21px;
-    }
-    
-    .card:hover {
-      transform: translateY(10px);
-      transition: 0.001s ease-out;
-    }
-    
-    .card:hover ~ .card {
-      position: relative;
-      left: 30%;
-      transition: 10s ease-out;
-    }
+      margin-left: 21px;
+  }
+  
+  .card:hover {
+    transform: translateY(5px);
+    transition: 0.0001s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 10%;
+    transition: 15s ease-out;
+  }
 }
 @media screen and (orientation:landscape) and (min-device-width: 368px) and (max-device-width: 923px) {
   .Main{
@@ -252,20 +251,19 @@ ul > li {
   //   left: 0px;
     margin-left: 3px;
   }
-  
   .card:not(:first-child) {
-      margin-left: 21px;
-  }
-  
-  .card:hover {
-    transform: translateY(10px);
-    transition: 0.001s ease-out;
-  }
-  
-  .card:hover ~ .card {
-    position: relative;
-    left: 30%;
-    transition: 10s ease-out;
-  }
+    margin-left: 21px;
+}
+
+.card:hover {
+  transform: translateY(5px);
+  transition: 0.0001s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 10%;
+  transition: 15s ease-out;
+}
  }
 
