@@ -15,9 +15,9 @@ export default function Header() {
     
       <div className='d-flex w-100 justify-content-end '>
         <div className='nav d-flex justify-content-end'>
-          <NavLink
+          {/* <NavLink
             to="/" 
-            className="nav-link">Home</NavLink>  
+            className="nav-link">Home</NavLink>   */}
           <NavLink
             to='/page'
             className="nav-link">Projects</NavLink> 
