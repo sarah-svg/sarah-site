@@ -10,8 +10,8 @@ export default function Header() {
   return (
     <div id='Header'>
       <button
-        className='btn btn-outline-dark mt-1 mb-3 d-flex align-items-start'
-        onClick={toggleFunction}> <span>{toggle ? 'Colorful' : 'Light'}</span> </button>
+        className='btn btn-outline-dark mt-3 mb-3 d-flex align-items-start d-flex justify-content-center align-items-center'
+        onClick={toggleFunction}> <span> Toggle: {toggle ? 'dark' : 'light'}</span> </button>
     
       <div className='d-flex w-100 justify-content-end '>
         <div className='nav d-flex justify-content-end'>
