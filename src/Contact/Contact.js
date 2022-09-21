@@ -21,19 +21,19 @@ export default function Contact() {
       <div className="d-flex contact" name="contact">
         <div className="column">
           {/* <a href="mailto: kjskillen@gmail.com" > */}
-          <button onClick={handleEmail}>
+          <button className='btn ' onClick={handleEmail}>
             <img className="imgHeader" src="./mail.svg" alt="icon link to Sarah's email" /></button>
           {/* </a> */}
         </div>
-        <div className="column">
+        <div className="column ">
           {/* <a href="https://www.linkedin.com/in/sarah-skillen/" > */}
-          <button className="button" onClick={handleLinkden}>
+          <button className="button btn " onClick={handleLinkden}>
             <img className="imgHeader" src="./linkedin.svg" alt="icon link to sarah's linkedin" /></button>
           {/* </a> */}
         </div> 
         <div className="column">
           {/* <a href="https://github.com/sarah-svg"> */}
-          <button onClick={handleMainGit}>
+          <button className='btn ' onClick={handleMainGit}>
             <img className="imgHeader" src="./git.svg" alt="icon link to Sarah's github" />
           </button>
          

@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer';
 
 function Main() {
   return (
-    <div className='d-flex h-100 w-100 flex-grow-0 flex-wrap body'>
+    <div className='d-flex h-100 w-100 flex-grow-0 flex-wrap'>
       <Header/>
       <div className="Main">
         <div className="typewriter">
