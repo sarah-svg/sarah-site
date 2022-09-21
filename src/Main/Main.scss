@@ -86,6 +86,7 @@ ul > li {
 
 }
 .card {
+  height: fit-content !important;
   padding: .9rem;
   display: flex;
   background-color:black !important;
@@ -162,7 +163,7 @@ ul > li {
      }
      .card {
     
-     
+      height: fit-content !important;
   
       display: flex;
       background-color:black !important;
@@ -250,6 +251,7 @@ ul > li {
     transition: 0.4s ease-out;
   //   position: relative;
   //   left: 0px;
+  height: fit-content !important;
     margin-left: 3px;
   }
   .card:not(:first-child) {
