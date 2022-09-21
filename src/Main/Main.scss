@@ -4,6 +4,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+.light{
+    background: linear-gradient(81deg,#1ee399,#dd26e5,#7926e5,#26e568,#8134b6,#3ddddf);
+    background-size: 360% 360%;
+    animation: gradient-animation 36s ease infinite;
+  }
+.easy{
+  background: linear-gradient(73deg,#656165,#d27ef1,#f5d0f5,#51f3fe,#d4f7f8,#656165,#c66dff);
+  background-size: 420% 420%;
+  animation: gradient-animation 35s ease infinite;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 .Main{
   margin: 0;
   padding: 0;

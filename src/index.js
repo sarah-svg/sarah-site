@@ -4,10 +4,14 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './Home/Home';
+import { ThemeProvider } from './store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <ThemeProvider>
+      <Home />
+    </ThemeProvider>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );

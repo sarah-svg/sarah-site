@@ -13,13 +13,40 @@
         font-size: 2rem !important;
         font-family: 'Hubballi' !important;
       }
+      a:active,  a:hover{
+        color: aqua;
+        text-shadow: teal 0px 0px 2px, teal 0px 0px 10px, teal 0px 0px 5px, aquamarine 0px 0px 10px, aquamarine 0px 0px 15px;
+
+        font-weight: bolder;
+    }
     .nav-link, a{
         color: black;
         border-bottom: none;
         font-size: 2rem !important;
-        :active :hover{
+        :active,  :hover{
             color: aqua;
-            font-size: 2rem !important;
+            text-shadow: teal 0px 0px 2px, teal 0px 0px 10px, teal 0px 0px 5px, aquamarine 0px 0px 10px, aquamarine 0px 0px 15px;
+
+            font-weight: bolder;
+        }
+    }
+    button{
+        padding: 1rem;
+        height: 2rem;
+        color: white;
+        background-color: black;
+        width: fit-content;
+        font-weight: bold;
+       span{
+              font-size: .76rem !important;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+       }
+        :active,  :hover{
+            color: aqua;
+            text-shadow: teal 0px 0px 2px, teal 0px 0px 10px, teal 0px 0px 5px, aquamarine 0px 0px 10px, aquamarine 0px 0px 15px;
+
+            font-weight: bolder;
         }
     }
 }

@@ -63,7 +63,12 @@ text-shadow: -2px 1px 5px rgba(5,212,230,0.87);
         color: black;
         font-family: 'Hubballi' !important;
       }
+      a:active,  a:hover{
+        color: aqua;
+        text-shadow: teal 0px 0px 2px, teal 0px 0px 10px, teal 0px 0px 5px, aquamarine 0px 0px 10px, aquamarine 0px 0px 15px;
 
+        font-weight: bolder;
+    }
 }
 @media screen and (orientation:portrait) and (min-device-width: 368px) and (max-device-width: 9003px) {
   #headerr{
@@ -80,6 +85,11 @@ text-shadow: -2px 1px 5px rgba(5,212,230,0.87);
           color: black;
           font-family: 'Hubballi' !important;
         }
+        a:active,  a:hover{
+          color: aqua;
+          text-shadow: teal 0px 0px 2px, teal 0px 0px 10px, teal 0px 0px 5px, aquamarine 0px 0px 10px, aquamarine 0px 0px 15px;
   
+          font-weight: bolder;
+      }
   }
 }
