@@ -9,8 +9,12 @@ export default function Footer() {
   const { toggle } = useContext(ThemeContext);
   return (
    
-    <footer style={{ width: '100% !important' }} className={` fixed-bottom ${toggle ? 'easy' : 'light'}`}> 
-      <Contact />
+    <footer style={{ width: '100% !important' }} className={` fixed-bottom ${toggle ? 'easy' : 'light'}`}>
+      <h1 style={{ fontWeight: 'bolder', marginLeft: '1.75rem' }}>Let's connect:</h1>
+      <displays>
+        <Contact />
+      </displays>
+      
       <div className='d-flex justify-content-center footer'>Created by Sarah Skillen &#169; 2022</div>
     </footer> 
 
