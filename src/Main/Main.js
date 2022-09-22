@@ -9,13 +9,17 @@ import Footer from '../Footer/Footer';
 
 function Main() {
   return (
-    <div className='d-flex h-100 w-100 flex-grow-0 flex-wrap'>
+    <div className=' h-100 w-100 d-flex flex-grow-0 flex-wrap'>
       <Header/>
       <div className="Main">
         <div className="typewriter">
-          <h1 className="name" style={{ fontWeight: 'bolder' } } >Sarah Skillen</h1>
-          <About /> 
- 
+          <h1 className="name" style={{ fontWeight: 'bolder' }} >Sarah Skillen</h1>
+          <div className='d-flex flex-wrap'>
+            <div style={{ margin:'1rem' }}>
+              <img src='./me.svg' alt='me' className='me' />
+            </div>
+            <About />
+          </div>
         </div>    
       </div>
     </div>
